@@ -1,22 +1,4 @@
-@import url('./root.css');
 /* Good Morning */
-.good-morning {
-    background: linear-gradient(to bottom, rgb(64,8,7), rgb(18,18,18));
-}
-.icon-round {
-    width: 2rem;
-    height: 2rem;
-    background-color: rgba(0, 0, 0, 0.466);
-    border-radius: 50%;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon-round i {
-    color: #fff;
-    font-size: 2rem;
-}
 
 /* End of  Good Morning */
 
