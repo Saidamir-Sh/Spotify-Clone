@@ -1,3 +1,5 @@
+@import url("./root.css");
+
 /* Navbar style */
 
 
@@ -55,7 +57,57 @@ position: fixed;
 
 /* End of Navbar Style*/
 
-
 /* Player style */
+
+.player-container {
+  height: 4rem;
+  background-color: rgb(24, 24, 24);
+}
+
+.img-player {
+  width: 40%;
+  height: 50px;
+}
+
+.player-container .bg-player h5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 9px;
+}
+
+.player-container .artist-name {
+  font-size: 7px;
+}
+
+.bg-player {
+  /* background-color: var(--bg-cards); */
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.controls-player a img {
+  width: 14px;
+  max-height: 16px;
+  margin-right: 0.5rem;
+  filter: brightness(60%);
+}
+
+.controls-player {
+  max-width: 220px;
+  margin: 0 auto;
+}
+.right-icons-player {
+  display: flex;
+}
+
+.right-icon-volume {
+  display: flex;
+  align-items: center;
+}
+
+.right-icons-player .bi {
+  margin-right: 0.4rem;
+}
 
 /* End of Player style*/
