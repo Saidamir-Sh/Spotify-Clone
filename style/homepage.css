@@ -51,6 +51,16 @@
     text-overflow: ellipsis; 
 }
 
+#recently-played h4 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#recently-played h6 {
+    color: rgb(194, 194, 194);
+    font-size: .7rem;
+}
+
 
 
 
