@@ -31,9 +31,13 @@
     height: 15rem;
 }
 
+#recently-played .card img, #shows-to-try .card img{
+    height: 25vh;
+}
+
 #recently-played h5, #shows-to-try h5 {
     font-size: .8rem;
-    margin-top: .2rem;
+    margin-top: .3rem;
 }
 
 #recently-played p, #shows-to-try p {
