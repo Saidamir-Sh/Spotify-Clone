@@ -1,5 +1,6 @@
 /* Navbar style */
 
+
 #nav {
 position: fixed;
     padding-top: 1rem;
@@ -12,18 +13,46 @@ position: fixed;
     flex-shrink: 0;
     background-color: rgb(8, 8, 8);
     width: 240px;
-    height: 100vh;
+    height: 80vh;
     transition: padding-top 0.2s ease 0s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     border-right: 2px solid rgba(133, 133, 133, 0.1);
     z-index: 11;
     overflow: initial;
     transform: translate3d(0px, 0px, 0px);
+    font-size: 12px;
+}
+
+#nav .bi:hover,
+#nav img:hover,
+#nav div:hover,
+#nav .songs:hover
+{
+
+    color: white;
+    cursor: pointer;
 }
 
 .songs{
     border-top: solid 1px gray;
     
 }
+
+.bottom_nav
+{
+    margin-left:15%;
+    margin-top: 90%;
+    color: white;
+
+}
+
+.bottom_nav > .bi{
+
+    margin-left:10%;
+    margin-top: 70%;
+    color: rgb(214, 49, 49);
+}
+
+
 /* End of Navbar Style*/
 
 
