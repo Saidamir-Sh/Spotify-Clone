@@ -32,7 +32,25 @@
 }
 
 #recently-played .card img, #shows-to-try .card img{
-    height: 25vh;
+    height: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+    #recently-played .card img, #shows-to-try .card img{
+        height: 10rem;
+        width: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    #recently-played .card, #shows-to-try .card{
+        height: 16rem;
+        width: 20rem;
+        margin: auto;
+        text-align: center;
+    }
 }
 
 #recently-played h5, #shows-to-try h5 {
