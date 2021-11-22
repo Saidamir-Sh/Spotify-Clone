@@ -1,4 +1,3 @@
-@import url('./root.css');
 /* Good Morning */
 .good-morning {
     background: linear-gradient(to bottom, rgb(64,8,7), rgb(18,18,18));
@@ -17,12 +16,55 @@
     color: #fff;
     font-size: 2rem;
 }
-
 /* End of  Good Morning */
 
 
 /* Recently Played */
+.column {
+    float: left;
+    width: 12%;
+    padding: 0 10px;
+}
 
+.custom-row {
+    margin: 0px -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+#recently-played .card, #shows-to-try .card{
+    background-color: var(--bg-cards);
+    color: white;
+}
+
+#recently-played h5, #shows-to-try h5 {
+    font-size: .8rem;
+}
+
+#recently-played p, #shows-to-try p {
+    font-size: .75rem;
+    color: rgb(194, 194, 194);
+}
+
+#recently-played .card-body p, #shows-to-try .card-body p {
+    white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
 /* End of  recently played */
 
 
