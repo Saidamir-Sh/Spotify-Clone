@@ -47,8 +47,7 @@
 
 #recently-played .card-body p, #shows-to-try .card-body p {
     white-space: nowrap;
-    width: 120px;
-    overflow: hidden;
+    overflow-x: hidden;
     text-overflow: ellipsis; 
 }
 
