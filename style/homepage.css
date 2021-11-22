@@ -12,14 +12,9 @@
 }
 
 .custom-row {
-    margin: 0px -5px;
+    margin: 0px -30px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 @media screen and (max-width: 768px) {
     .column {
@@ -51,12 +46,12 @@
     text-overflow: ellipsis; 
 }
 
-#recently-played h4 {
+#recently-played h4, #shows-to-try h4 {
     color: white;
     font-size: 1.2rem;
 }
 
-#recently-played h6 {
+#recently-played h6, #shows-to-try h6 {
     color: rgb(194, 194, 194);
     font-size: .7rem;
 }
