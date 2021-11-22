@@ -74,10 +74,14 @@
   border-radius: 50%;
 } */
 
-.controls-player > hr {
-  border-color: #ada9a8 !important;
-  border-width: 3px !important;
-  max-width: 65px !important;
+.controls-player hr {
+  background-color: #c7c4c4;
+  border-width: 0;
+  color: #aaaaaa;
+  height: 2px;
+  line-height: 0;
+  text-align: center;
+  width: 200%;
 }
 
 .right-icons-player {
