@@ -44,7 +44,7 @@
 #recently-played .card, #shows-to-try .card{
     background-color: var(--bg-cards);
     color: white;
-    height: 15rem;
+    height: 14rem;
 }
 
 #recently-played .card img, #shows-to-try .card img{
