@@ -27,7 +27,8 @@
 /* Player style */
 
 .player-container {
-  height: 4rem;
+  min-height: 4rem;
+  max-width: 90%;
   background-color: rgb(24, 24, 24);
 }
 
