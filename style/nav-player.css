@@ -4,6 +4,7 @@
 
 
 #nav {
+
 position: fixed;
     padding-top: 1rem;
     top: 0px;
@@ -45,6 +46,26 @@ position: fixed;
     margin-top: 90%;
     color: white;
 
+=======
+  position: fixed;
+  padding-top: 1rem;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background-color: rgb(8, 8, 8);
+  width: 240px;
+  height: 100vh;
+  transition: padding-top 0.2s ease 0s,
+    width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  border-right: 2px solid rgba(133, 133, 133, 0.1);
+  z-index: 11;
+  overflow: initial;
+  transform: translate3d(0px, 0px, 0px);
+
 }
 
 .bottom_nav > .bi{
@@ -60,13 +81,18 @@ position: fixed;
 /* Player style */
 
 .player-container {
-  height: 4rem;
+  min-height: 4rem;
+  max-width: 90%;
   background-color: rgb(24, 24, 24);
 }
 
 .img-player {
-  width: 40%;
-  height: 50px;
+  width: 45%;
+  height: 45px;
+}
+
+.player-container > div > div > div {
+  display: flex;
 }
 
 .player-container .bg-player h5 {
@@ -95,19 +121,34 @@ position: fixed;
 
 .controls-player {
   max-width: 220px;
-  margin: 0 auto;
+  margin-top: 15px;
 }
+
+/* .controls-player .pause-icon-player {
+  border: 10px solid white;
+  border-radius: 50%;
+} */
+
+.controls-player hr {
+  background-color: #c7c4c4;
+  border-width: 0;
+  color: #aaaaaa;
+  height: 2px;
+  line-height: 0;
+  text-align: center;
+  width: 200%;
+}
+
 .right-icons-player {
   display: flex;
+  margin-right: 8rem;
+  justify-content: right;
 }
 
+.right-icons-player > input,
 .right-icon-volume {
   display: flex;
-  align-items: center;
-}
-
-.right-icons-player .bi {
-  margin-right: 0.4rem;
+  margin: 3px 0.7rem;
 }
 
 /* End of Player style*/
