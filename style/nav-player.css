@@ -1,8 +1,42 @@
+@import url("./root.css");
+
 /* Navbar style */
 
 /* End of Navbar Style*/
 
-
 /* Player style */
 
+.player-container {
+  height: 4rem;
+  background-color: rgb(24, 24, 24);
+}
+
+.img-player {
+  width: 40%;
+  height: 50px;
+}
+
+.player-container .bg-player h5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bg-player {
+  /* background-color: var(--bg-cards); */
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.controls-player {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.controls-player a img {
+  width: 14px;
+  max-height: 16px;
+  margin-right: 0.5rem;
+  filter: brightness(60%);
+}
 /* End of Player style*/
