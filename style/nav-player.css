@@ -1,5 +1,24 @@
 /* Navbar style */
 
+#nav {
+position: fixed;
+    padding-top: 1rem;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+    background-color: rgb(8, 8, 8);
+    width: 240px;
+    height: 100vh;
+    transition: padding-top 0.2s ease 0s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    border-right: 2px solid rgba(133, 133, 133, 0.1);
+    z-index: 11;
+    overflow: initial;
+    transform: translate3d(0px, 0px, 0px);
+}
 /* End of Navbar Style*/
 
 

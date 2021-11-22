@@ -15,6 +15,8 @@
     <!-- Root CSS -->
     <link rel="stylesheet" href="../style/root.css">
 
+    <script src="https://kit.fontawesome.com/a9aa54b9ee.js" crossorigin="anonymous"></script>
+
     <title>Spotify</title>
   </head>
   <body>
@@ -22,10 +24,23 @@
     <div class="container-fluid d-flex flex-row">
       <!-- Navbar -->
       <aside id="nav">
-          <div class="row">
+          <div class="d-flex flex-column mt-0 align-items-start" style="height: 100%;">
               <div class="col-md-2">
                   <!--the nav menu collapse on small screen-->
-                  <nav>spotify nav</nav>
+                 <div class="d-flex mt-3 mx-3"><img src="/assets/logo/Spotify_Logo_White.png" alt="" srcset="" width="130px">
+                </div>
+                 <div class=" d-flex align-items-center mt-3 mx-3 text-muted">
+                   <i class="bi bi-house-door-fill " style="font-size: 1.5rem;"></i> 
+                   <div class="  text-bold ml-3">Home</div>
+                </div>
+                <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
+                  <i class="bi bi-search" style="font-size: 1.5rem;"></i> 
+                  <div class="  text-bold ml-3">Search</div>
+               </div>
+               <div class=" d-flex align-items-center mt-3 mx-3 text-muted">
+                <img src="/assets/logo/library.png" style="width: 1.5rem; "></img> 
+                <div class="   text-bold ml-3">Your library</div>
+             </div>
               </div>
           </div>
       </aside>
