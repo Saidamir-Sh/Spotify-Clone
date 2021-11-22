@@ -28,6 +28,7 @@
 #recently-played .card, #shows-to-try .card{
     background-color: var(--bg-cards);
     color: white;
+    height: 15rem;
 }
 
 #recently-played h5, #shows-to-try h5 {
