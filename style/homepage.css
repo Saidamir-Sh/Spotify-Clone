@@ -24,21 +24,17 @@
 .column {
     float: left;
     width: 12%;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .custom-row {
-    margin: 0px -30px;
+    margin: 0px -67px;
+    padding-left: 46px;
+    padding-right: -49px;
 }
 
 
-@media screen and (max-width: 768px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+
   
 
 #recently-played .card, #shows-to-try .card{
@@ -51,10 +47,7 @@
     height: 8rem;
 }
 
-@media screen (max-width: 576px){
-    #recently-played .card img, #shows-to-try .card img{
-       
-    }
+@media screen and (max-width: 576px){
 
     #recently-played .card, #shows-to-try .card{
         height: 16rem;
@@ -63,10 +56,22 @@
         text-align: center;
     }
 
-    #recently-played .card p, #shows-to-try .card p{
-        
-    }
 }
+
+@media screen and (max-width: 768px) {
+    .custom-row {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 46px;
+        padding-right: -49px;
+    }
+    
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 
 @media screen and (max-width: 768px) {
     #recently-played .card img, #shows-to-try .card img{
@@ -79,7 +84,7 @@
 
     #recently-played .card, #shows-to-try .card{
         height: 16rem;
-        width: 20rem;
+        width: 12rem;
         margin: auto;
         text-align: center;
     }
