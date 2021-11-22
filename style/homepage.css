@@ -37,6 +37,7 @@
 
 #recently-played h5, #shows-to-try h5 {
     font-size: .8rem;
+    margin-top: .2rem;
 }
 
 #recently-played p, #shows-to-try p {
