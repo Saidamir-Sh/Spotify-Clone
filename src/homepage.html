@@ -21,22 +21,80 @@
     
     
       <!-- Navbar -->
+
+
+      <aside id="nav">
+          <div class=" row d-flex flex-column ml-3 align-items-start" style="height: 100%; position:relative">
+              <div class="col flex-grow-0" style="max-width: 0.33%;">
+                  <!--the nav menu collapse on small screen-->
+                 <div class="d-flex mt-3 mx-3"><img src="/assets/logo/Spotify_Logo_White.png" alt="" srcset="" width="130px">
+                </div>
+                 <div class=" d-flex align-items-center mt-4 mx-3 text-muted">
+                   <i class="bi bi-house-door-fill " style="font-size: 1.5rem;"></i> 
+                   <div class="  font-weight-bold ml-3">Home</div>
+                </div>
+                <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
+                  <i class="bi bi-search" style="font-size: 1.5rem;"></i> 
+                  <div class="  font-weight-bold ml-3">Search</div>
+               </div>
+               <div class=" d-flex align-items-center mt-3 mx-3 text-muted">
+                <img src="/assets/logo/library.png" style="width: 1.5rem; " class=""></img> 
+                <div class=" d-inline  w-100 font-weight-bold ml-3 ">Your library </div>
+             </div>
+             <div class=" d-flex align-items-center mt-3 mx-3 text-muted">
+              <img src="" style="width: 1.5rem; "></img> 
+              <div class="font-weight-bold mx-0 p-0  d-inline"></div>
+           </div>
+       
+           <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
+                  <i class="bi bi-plus-square" style="font-size: 1.5rem;"></i> 
+                  <div class="  font-weight-bold ml-3">Create Playlist</div>
+               </div>
+
+          <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
+            <img src="/assets/homepage/liked songs.jpg"  style="width: 1.5rem; "alt="" srcset="">
+            <div class="  font-weight-bold ml-3">Liked Songs</div>
+         </div>
+
+        </div>
+                 
+
+              <div class="col-md-2 mt-5 mx-2 songs overflow-auto" style="max-width: 80%; max-height: 100%; ">
+
+               <div class="d-flex align-items-center text-muted  mt-2 " ><p>Song title</p></div>
+               <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
+               <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
+               <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
+               <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
+               <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
+               <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
+            </div>
+      
+
+        <div class="d-flex flex-column align-items-baseline text-right bottom_nav">
+          <i class="bi bi-arrow-down-circle" style="font-size: 1.5rem;" ></i>
+          <div class="text-right text-white" style="position: absolute;">Install App</div>
+        </div>
+         </div> 
+      </aside>
+
+
       
       <!-- End of Navbar-->
       
       <main>
           <!-- Good Morning -->
-          <section class="container-fluid good-morning d-flex flex-column">
+          <section class="container-fluid good-morning d-flex flex-column pb-5">
             <div class="row d-flex justify-content-between pt-3">
-                <div class="col-10">
-                    <div class="d-flex justify-content-between" style="width: 8%;">
+                <div class="col-10 mb-5">
+                    <div class="d-flex justify-content-between pb-5" style="width: 8%;">
                         <a class="icon-round"><i class="bi bi-arrow-left-short"></i></a>
                         <a class="icon-round"><i class="bi bi-arrow-right-short"></i></a>
                     </div>
-                    <h1 class="text-white font-weight-bold">Good Morning</h1>
+                    <h1 class="text-white font-weight-bold mb-0">Good Morning</h1>
                 </div>
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-start" style="background-color: rgba(0, 0, 0, 0.541); border-radius: 15px;">
+                <div class="col-2">
+                    <div class="d-flex justify-content-center align-items-start" style="background-color: rgba(0, 0, 0, 0.185); border-radius: 15px;">
                         <img  class="mr-2 align-self-center" style="width: 2em; border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1281577317194760196/mG74FQIP.jpg" alt="Profile">
                             <p class="text-white mt-3 font-weight-bold" style="font-size: .8rem;">Diego Banovaz</p>
                             <i class="bi bi-caret-down-fill mt-3 text-white ml-1" style="font-size: .8rem;"></i>
@@ -44,9 +102,75 @@
                 </div>
             </div>
             
-            <div class="row">
-                <div class="row"></div>
-                <div class="row"></div>
+            <div class="container-100">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img1.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">Burning Jazz-rock Fusion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/liked songs.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">Liked Songs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img3.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">Opeth</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img4.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">LE BASK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img5.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">This is a Joe Bonamassa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img2.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">Metal Ballads</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img7.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">Amo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="d-flex align-items-center" style="background-color: rgba(87, 87, 87, 0.267);">
+                            <img class="img-fluid" style="width: 5em;" src="../assets/homepage/img8.jpg" alt="Album Cover">
+                            <div class="card-body">
+                                <p class="text-white font-weight-bold" style="font-size: small;">Nymphetamine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </section>
           <!-- End of Good Morning -->
