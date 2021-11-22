@@ -48,24 +48,14 @@
 }
 
 #recently-played .card img, #shows-to-try .card img{
-    height: 8rem;
-}
-@media screen and (max-width: 576px){
-    #recently-played .card img, #shows-to-try .card img{
-       
-    }
-    #recently-played .card, #shows-to-try .card{
-        height: 16rem;
-        width: 40rem;
-        margin: auto;
-        text-align: center;
-    }
+    height: 6.5rem;
+    width: 6.5rem;
 }
 
 @media screen and (max-width: 768px) {
     #recently-played .card img, #shows-to-try .card img{
-        height: 10rem;
-        width: 10rem;
+        height: 2rem;
+        width: 8rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
