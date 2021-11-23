@@ -18,31 +18,90 @@
     <title>Artist</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <main class="container-fluid">
+      <div class="row">
 
-    <!-- End of Navbar-->
-    
+        <!-- */*/*/*/*/*/*/*/*  Navbar */*/*/*/*/*/*/*/*/*/*/* -->
+        <div class="col-lg-2 col-md-2" style="background-color: rgb(18,18,18); height: 100vh;">
+          <nav class="nav d-flex flex-column justify-content-between">
+            <div class="nav-logo py-3">
+              <img style="width: 6em;" src="../assets/logo/Spotify_Logo_White.png" alt="Logo">
+            </div>
+            <div class="nav-links py-2">
+              <ul class="text-white">
+                <li><i class="bi bi-house-door-fill"></i> Home</li>
+                <li><i class="bi bi-search"></i> Search</li>
+                <li><i class="bi bi-music-note-list"></i>Your Library</li>
+              </ul>
+            </div>
+            <div class="py-1">
+              <p class="text-white font-weight-bold" style="font-size: .9rem;"> <i class="bi bi-plus-square text-white" style="font-size: 1.5rem;"></i>  Create Playlist</p>
+              <p class="text-white font-weight-bold" style="font-size: .9rem;"><img style="width: 1.5em;" src="../assets/homepage/liked songs.jpg" alt=""> Liked Songs</p>
+            </div>
+            <div class="overflow-auto nav-list d-flex flex-column" style="font-size: .8rem; height: 50vh;">
+              <a href="#">Funky Heavy Bluesy</a>
+              <a href="#">Your Top Songs 2020</a>
+              <a href="#">In Love With You</a>
+              <a href="#">This Is Rod Stewart</a>
+              <a href="#">FRANCHISE ft. Young Thug</a>
+              <a href="#">Your Top Songs 2019</a>
+              <a href="#">Palleggio</a>
+              <a href="#">This Is Joe Bonamassa</a>
+              <a href="#">Jun19</a>
+              <a href="#">Jack 30th Party 2</a>
+              <a href="#">Jack 30th Party</a>
+              <a href="#">This Is Opeth</a>
+              <a href="#">Metal Ballads</a>
+              <a href="#">New Playlist</a>
+              <a href="#">Your Top Songs 2018</a>
+              <a href="#">Jazz Classics Blue Note Edition</a>
+            </div>
+            <div>
+              <p class="text-start text-white" style="font-size: .8rem;"><i class="bi bi-arrow-down-circle"></i> Install App</p>
+            </div>
+          </nav>
+        </div>
+        <!-- */*/*/*/*/*/*/*/* End of Navbar */*/*/*/*/*/*/*/*/*/*/* -->
 
+        <!-- */*/*/*/*/*/*/*/*  Artist Page */*/*/*/*/*/*/*/*/*/*/* -->
+        <div class="col-lg-10 col-md-10">
+          <!-- Jumbotron -->
+          <div class="container" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../assets/artistpage/jumbotron.jpg'); background-position: center; height: 50vh;">
+            <div class="row d-flex justify-content-between pt-3 h-100">
+              <div class="col-lg-9">
+                <div class="d-flex justify-content-between pb-5" style="width: 8%;">
+                  <a class="icon-round text-white"><i class="bi bi-arrow-left-short" style="font-size: 2rem;"></i></a>
+                  <a class="icon-round text-white"><i class="bi bi-arrow-right-short" style="font-size: 2rem;"></i></a>
+                </div>
+               <div class="pt-5 position-absolute" style="bottom: 0px;">
+                 <p class="text-white"><img style="width: 1em;" src="../assets/logo/verify.png"> Verified artist</p>
+                 <h1 class="text-white" style="font-size: 4rem;font-weight: 700;">Queen</h1>
+                 <small class="text-white font-weight-bold">37 254 400 monthly listeners</small>
+               </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="d-flex justify-content-center align-items-start" style="background-color: rgba(0, 0, 0, 0.185); border-radius: 15px;">
+                  <img  class="mr-2 align-self-center" style="width: 2em; border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1281577317194760196/mG74FQIP.jpg" alt="Profile">
+                  <p class="text-white mt-3 font-weight-bold" style="font-size: .8rem;">Diego Banovaz</p>
+                  <i class="bi bi-caret-down-fill mt-3 text-white ml-1" style="font-size: .8rem;"></i>
+                </div>
+              </div>
+            </div>
 
-    <!-- Jumbotron -->
+          </div>
+          <!-- ENd of Jumbotron-->
 
-    <!-- End of Jumbotron-->
+          <!-- Song List -->
+          <div>
 
-
-
-    
-    <!-- List -->
-
-    <!-- End of List -->
-
-
-    
+          </div>
+          <!--End of Song List-->
+        </div>
+      </div>
+    </main>   
     <!-- Player -->
 
     <!-- End of Player-->
-
-    
-
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

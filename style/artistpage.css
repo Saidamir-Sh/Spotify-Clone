@@ -1,3 +1,23 @@
+/* Navbar */
+ul li {
+    list-style: none;
+}
+.nav-links ul li {
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 2em;
+}
+.nav-links ul li i {
+    margin-right: .5em;
+    font-size: 1.3rem !important;
+}
+.nav-list a {
+    color: rgb(243, 238, 230);
+    text-decoration: none;
+    padding: .5em 0em;
+}
+/* End of Navbar */
+
 /* Album Jumbotron */
 
 /* End of Jumbotron*/
