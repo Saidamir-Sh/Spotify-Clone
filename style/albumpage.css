@@ -4,9 +4,9 @@
 
 .div-album-page {
   background: linear-gradient(
-    170deg,
-    rgba(166, 58, 134, 1) 0%,
-    rgba(18, 18, 18, 1) 37%
+    180deg,
+    rgba(166, 58, 134, 0.911) 10%,
+    rgba(18, 18, 18, 1) 110%
   );
 }
 
@@ -41,10 +41,15 @@
   font-weight: 800;
 }
 
+.buttons-wrapper {
+  background-color: rgba(5, 5, 5, 0.246);
+}
+
 .album-btn {
-  display: inline-flex;
+  display: block;
+  margin: auto;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-left: 6rem;
 }
 
@@ -86,3 +91,107 @@
 /* List */
 
 /* End of List*/
+
+/* Player style */
+
+.player-wrapper {
+  background-color: rgb(24, 24, 24);
+}
+
+.img-album {
+  width: 100%;
+  height: 100%;
+  margin-left: 2rem;
+}
+
+/* .player-wrapper > div > div > div {
+  display: flex;
+} */
+
+.player-wrapper .bg-player h5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 9px;
+  margin-bottom: 3px;
+}
+
+.player-wrapper .artist-name {
+  font-size: 7px;
+}
+
+@media (max-width: 768px) {
+  .player-wrapper .bg-player h5 {
+    font-size: 6px;
+  }
+  .player-wrapper .bg-player .artist-name {
+    font-size: 5px;
+  }
+}
+
+.bg-player {
+  /* background-color: var(--bg-cards); */
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.controls-player a img {
+  width: 10px;
+  max-height: 14px;
+}
+
+.controls-player a i {
+  filter: brightness(60%);
+}
+
+.controls-player .play-icon-player {
+  color: black;
+  background-color: white;
+  border: 6px solid white;
+  border-radius: 100%;
+  width: 10px;
+  max-height: 8px;
+  margin-right: 2rem;
+}
+
+.controls-player div:nth-child(2) {
+  margin-top: 1px;
+  padding-top: 1rem;
+}
+
+.player-part span:first-of-type {
+  margin-right: 4px;
+  font-size: 8px;
+}
+
+.player-part #hr {
+  border: 2px solid rgba(128, 128, 128, 0.596);
+  min-width: 400px;
+  height: 2px;
+}
+
+.player-part #hr ~ span {
+  margin-left: 4px;
+  font-size: 8px;
+}
+
+#input-player {
+  background-color: grey;
+  color: grey;
+  width: 4rem;
+}
+
+.input-wrapper {
+  margin-top: 6px;
+}
+
+.player-wrapper i {
+  opacity: 80%;
+}
+
+@media (max-width: 768px) {
+  .right-icons-player {
+    display: none;
+  }
+}
+/* End of Player style*/
