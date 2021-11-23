@@ -1,8 +1,21 @@
+@import url(../style/root.css);
 /* Album Jumbotron */
 
 /* End of Jumbotron*/
 
 
 /* List */
+#songs-list {
+    color: white;
+}
+
+.light-text {
+    color: rgba(194, 194, 194, 0.753);
+}
+
+#songs-list p {
+    font-size: .75rem;
+    text-transform: capitalize;
+}
 
 /* End of List*/
