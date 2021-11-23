@@ -40,7 +40,7 @@ html,
 }
 
 .fb_btn{
-    width: 80%;
+    width: 100%;
     background-color: #3E5A9B;
     margin: auto;
     color: white;
@@ -50,7 +50,7 @@ html,
 }
 
 .apple_btn{
-    width: 80%;
+    width: 100%;
     background-color: #000000;
     margin: auto;
     color: white;
@@ -72,7 +72,6 @@ html,
      margin:0, auto;
 }
 
-.container-fluid>.main_wrap> .info_wrap> div:nth-child(4) > .forgot{
-    color: var(--green);
-    background-color: yellowgreen;
+.container-fluid>.main_wrap> .info_wrap> .forgot{
+    border-bottom: solid 1px green;
 }
