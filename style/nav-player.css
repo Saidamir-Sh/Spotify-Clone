@@ -1,25 +1,40 @@
 @import url("./root.css");
 
-/* Navbar style */
-
-/* End of Navbar Style*/
-
 /* Player style */
 
-.player-container {
-  height: 4rem;
+.player-wrapper {
+  max-height: 4rem;
   background-color: rgb(24, 24, 24);
 }
 
-.img-player {
-  width: 40%;
-  height: 50px;
+.img-album {
+  width: 100%;
+  height: 100%;
 }
 
-.player-container .bg-player h5 {
+.player-wrapper > div > div > div {
+  display: flex;
+}
+
+.player-wrapper .bg-player h5 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 9px;
+  margin-bottom: 3px;
+}
+
+.player-wrapper .artist-name {
+  font-size: 7px;
+}
+
+@media (max-width: 768px) {
+  .player-wrapper .bg-player h5 {
+    font-size: 6px;
+  }
+  .player-wrapper .bg-player .artist-name {
+    font-size: 5px;
+  }
 }
 
 .bg-player {
@@ -28,15 +43,48 @@
   color: white;
 }
 
+.controls-player a img {
+  width: 10px;
+  max-height: 14px;
+  margin-right: 2rem;
+  filter: brightness(60%);
+}
+
 .controls-player {
   max-width: 220px;
   margin: 0 auto;
 }
 
-.controls-player a img {
-  width: 14px;
-  max-height: 16px;
-  margin-right: 0.5rem;
-  filter: brightness(60%);
+.controls-player div:nth-child(2) {
+  margin-top: 1px;
+  padding-top: 1rem;
+}
+
+.player-part span:first-of-type {
+  margin-right: 4px;
+  font-size: 8px;
+}
+
+.player-part #hr {
+  border: 2px solid rgba(128, 128, 128, 0.596);
+  width: 140px;
+  height: 2px;
+}
+
+.player-part #hr ~ span {
+  margin-left: 4px;
+  font-size: 8px;
+}
+
+#input-player {
+  background-color: grey;
+  color: grey;
+  width: 4rem;
+  height: 2px;
+}
+
+.input-wrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 /* End of Player style*/
