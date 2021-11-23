@@ -16,9 +16,44 @@
 
     <title>Login</title>
   </head>
-  <body>
+  <body style="background-color: white;">
+
+        <div class="">
+           <div class="container-fluid text-center mt-4 ">
+             <img class="mb-3" src="/assets/logo/Spotify_Logo_Black.png" alt="" sizes="" srcset="" width="180px">
+           </div>
+           
+           <div class="container justify-content-center login_info mt-3">
+             <div class="d-flex flex-column">
+                <p class="text-center font-weight-bold"> To continue, log into Spotify.</p>
+             
+            <button class="btn-lg text-center rounded-pill fb_btn mb-2"><i class="bi bi-facebook">
+                          </i> <span>continue with Facebook</span>
+              </button>
+
+            <button class="btn-lg text-center rounded-pill apple_btn">
+              <i class="bi bi-apple"></i> <span>continue with Apple</span>
+            </button>
+            
+              <div class="mb-3 user_info mx-auto" style="width:50%;">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              <div class="mb-3 user_info mx-auto" style="width:50%;">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 mx-auto d-flex justify-content-center justify-content-between " style="width:50%;">
+                <input type="checkbox" class="form-check-input ml-1" id="exampleCheck1"><span class="text-mute ml-2">Remember me</span>
+                 <button type="submit" class="btn btn-lg  rounded-pill log_in">Log in</button>
+              </div>
+           </div>
+
+           
 
 
+           </div>
+      </div>
 
     
     <script src="./app.js"></script>

@@ -1,0 +1,61 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --green: rgb(71, 184, 80);
+    --blueFb: rgb(62, 90, 155);
+    --grey: rgb(18,18,18);
+    --bg-cards: rgb(24,24,24);
+    --login-bg:white;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+html,
+.container-fluid
+{
+    background-color: white;
+}
+
+.container-fluid{
+    border-bottom: solid 1px  rgb(214, 211, 211);
+}
+
+.login_info{
+
+    margin:0, auto;
+    background-color: white;
+}
+
+.fb_btn{
+    width: 50%;
+    background-color: #3E5A9B;
+    margin: auto;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.apple_btn{
+    width: 50%;
+    background-color: #000000;
+    margin: auto;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.log_in{
+  background-color: var(--green);
+  width: 50%;
+  color:white;
+}
