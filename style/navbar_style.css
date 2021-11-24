@@ -62,13 +62,22 @@
 
    
 }
+#nav > .main_wrapper> .playlist> .hover_link{
+
+    color:  #9e9898;
+    font-size: 0.6rem;
+    font-weight: lighter;
+
+}
 
 #nav > .main_wrapper> .first_column> .hover_link,
-#nav > .main_wrapper> .playlist> .hover_link,
 #nav > .main_wrapper> #download> .hover_link
 {
- color:  #686868;
+ color:  #9e9898;
+ font-size: 0.7rem;
+ font-weight: 600;
 }
+
 #nav > .main_wrapper> .first_column> .hover_link:hover,
 #nav > .main_wrapper> .playlist> .hover_link:hover,
 #nav > .main_wrapper> #download> .hover_link:hover
