@@ -31,53 +31,54 @@
   <!-- Player -->
 
   <!--  ehy I'm davide working on the player -->
-  <div class="container player-container container-fluid fixed-bottom mt-1 w-100">
+  <div class="container player-container container-fluid fixed-bottom w-100">
 
     <div class="d-flex flex-row justify-content-between bg-player">
       <!--  img + title + artist-name -->
-      <div class="d-flex flex-row mt-auto mr-auto col-3">
+      <div class="d-flex flex-row mt-2 mr-auto col-3 col-md-1">
         <img class="img-player" width="100%" height="100%" src=" /assets/playicons/c49c9f23611294a7f7fbcbee3a22b2af.png"
           alt="queen-the-game-cover-art">
-        <div class="d-flex flex-column pl-3">
+        <div class="d-flex flex-column mt-2 pl-3">
           <h5>Another One Bites The Dust - Remastered 2011 </h5>
           <p class="artist-name">Queen</p>
         </div>
-        <div class="d-flex col-1 mt-1 ml-2"><i class="bi bi-heart mr-3"></i>
+        <div class="d-flex col-1 ml-2"><i class="bi bi-heart mr-3"></i>
           <i class="bi bi-aspect-ratio"></i>
         </div>
       </div>
       <!--  end img + title + artist-name -->
 
       <!-- play icons  -->
-      <div class="row">
-        <div class="col-12  w-100 mt-4 ml-auto controls-player">
-          <div class="d-flex justify-content-between">
-            <a href="#"><img src="/assets/playicons/Shuffle.png" alt="shuffle-icon">
-            </a>
-            <a href="#"><img src="/assets/playicons/Previous.png" alt="previous-icon">
-            </a>
-            <a href="#"><img class="pause-icon-player" src="/assets/playicons/Pause.png" alt="pause-icon">
-            </a>
-            <a href="#"><img src="/assets/playicons/Next.png" alt="next-icon">
-            </a>
-            <a href="#"><img src="/assets/playicons/Repeat.png" alt="repeat-icon">
-            </a>
-            <div class="row col-12">
-              <hr>
-            </div>
-          </div>
+
+      <div class="col-6 col-md-4 w-100 ml-auto controls-player">
+        <div class="d-flex justify-content-between mt-2">
+          <a href="#"><img src="/assets/playicons/Shuffle.png" alt="shuffle-icon">
+          </a>
+          <a href="#"><img src="/assets/playicons/Previous.png" alt="previous-icon">
+          </a>
+          <a href="#"><img class="pause-icon-player" src="/assets/playicons/Pause.png" alt="pause-icon">
+          </a>
+          <a href="#"><img src="/assets/playicons/Next.png" alt="next-icon">
+          </a>
+          <a href="#"><img src="/assets/playicons/Repeat.png" alt="repeat-icon">
+          </a>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>0.12</p>
+          <hr>
+          <p>3.34</p>
         </div>
       </div>
       <!-- end play icons  -->
 
       <!--  icons-right-volume -->
       <div class="row right-icons-player">
-        <div class="d-flex flex-row col-2 mt-3 right-icon-volume">
+        <div class="d-flex flex-row col-4 col-md-2 mt-3 right-icon-volume">
           <i class="bi bi-text-indent-left pr-2"></i>
           <i class="bi bi-speaker-fill pr-2"></i>
           <i class="bi bi-volume-up"></i>
         </div>
-        <div class="col-1"><input class="input-player ml-3 mb-1" type="range" value="100" /></div>
+        <div class="col-3 col-md-1"><input class="input-player ml-3 mb-1" type="range" value="100" /></div>
       </div>
       <!--  end icons-right-volume -->
     </div>
