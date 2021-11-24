@@ -10,6 +10,8 @@
     --blueFb: rgb(62, 90, 155);
     --grey: rgb(18,18,18);
     --bg-cards: rgb(24,24,24);
+    --login-bg:white;
+    
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span, li {
