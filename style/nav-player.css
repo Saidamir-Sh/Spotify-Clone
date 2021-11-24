@@ -97,9 +97,8 @@
 }
 
 #nav:hover{
-
-   color: rgb(255, 245, 245);
-  cursor: pointer;
+   color: rgb(255, 246, 246);
+    cursor: pointer;
   }
 
    
@@ -115,6 +114,7 @@
     margin-left:15%;
     margin-top: 90%;
     color: white;
+ 
 
 }
 
@@ -122,7 +122,7 @@
 
     margin-left:10%;
     margin-top: 70%;
-    color: rgb(238, 225, 225);
+    color: rgb(214, 49, 49);
 }
 
 #nav > div > .playlist{
