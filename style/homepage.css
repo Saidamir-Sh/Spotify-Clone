@@ -34,9 +34,6 @@
 }
 
 
-
-
-
 #recently-played .card, #shows-to-try .card{
     background-color: var(--bg-cards);
     color: white;
@@ -79,6 +76,10 @@
     width: 50px;
     overflow: hidden;
     text-overflow: ellipsis; 
+}
+
+#shows-to-try > div > div.row {
+    width: -moz-available;
 }
 
 
