@@ -1,3 +1,4 @@
+@import url(./root.css);
 /* Good Morning */
 .good-morning {
     background: linear-gradient(to bottom, rgb(155, 3, 0), rgb(18,18,18));
@@ -23,35 +24,33 @@
 .column {
     float: left;
     width: 12%;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .custom-row {
-    margin: 0px -5px;
+    margin: 0px -67px;
+    padding-left: 46px;
+    padding-right: -49px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-@media screen and (max-width: 768px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
+
+
 
 #recently-played .card, #shows-to-try .card{
     background-color: var(--bg-cards);
     color: white;
+    height: 14rem;
 }
+
+#recently-played .card img, #shows-to-try .card img{
+    height: 8rem;
+}
+
 
 #recently-played h5, #shows-to-try h5 {
     font-size: .8rem;
+    margin-top: .3rem;
 }
 
 #recently-played p, #shows-to-try p {
@@ -61,9 +60,89 @@
 
 #recently-played .card-body p, #shows-to-try .card-body p {
     white-space: nowrap;
-    width: 120px;
+    overflow-x: hidden;
+    text-overflow: ellipsis; 
+}
+
+#recently-played h4, #shows-to-try h4 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#recently-played h6, #shows-to-try h6 {
+    color: rgb(194, 194, 194);
+    font-size: .7rem;
+}
+
+#recently-played .card-body p, #shows-to-try .card-body p {
+    white-space: nowrap;
+    width: 50px;
     overflow: hidden;
     text-overflow: ellipsis; 
+}
+
+
+@media screen and (max-width: 576px){
+    
+    .custom-row {
+        margin: 0px -67px;
+        padding-left: 46px;
+        padding-right: -49px;
+    }
+    
+    .column {
+        float: left;
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    #recently-played .card, #shows-to-try .card{
+        height: 14.5rem;
+        width: 15rem;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 15px;
+    }
+    
+    #recently-played .card img, #shows-to-try .card img{
+        height: 10rem;
+        width: 12rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .custom-row {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 46px;
+        padding-right: -49px;
+    }
+    
+    .column {
+        width: 25%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 768px) {
+    #recently-played .card img, #shows-to-try .card img{
+        height: 10rem;
+        width: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #recently-played .card, #shows-to-try .card{
+        height: 16rem;
+        width: 12rem;
+        margin: auto;
+        text-align: center;
+    }
 }
 /* End of  recently played */
 
@@ -71,3 +150,4 @@
 /* Shows to try  */
 
 /* End of  Shows to try */
+
