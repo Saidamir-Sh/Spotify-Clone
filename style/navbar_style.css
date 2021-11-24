@@ -32,6 +32,11 @@
 
 }
 
+#mobile_view:hover{
+    color: white;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width:577px){
  
