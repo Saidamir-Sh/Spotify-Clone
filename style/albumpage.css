@@ -94,45 +94,57 @@
 
 /* Player style */
 
-.player-wrapper {
-  background-color: rgb(24, 24, 24);
-}
-
-.img-album {
-  width: 100%;
-  height: 100%;
-  margin-left: 2rem;
-}
-
-/* .player-wrapper > div > div > div {
-  display: flex;
-} */
-
-.player-wrapper .bg-player h5 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 9px;
-  margin-bottom: 3px;
-}
-
-.player-wrapper .artist-name {
-  font-size: 7px;
-}
-
-@media (max-width: 768px) {
-  .player-wrapper .bg-player h5 {
-    font-size: 6px;
-  }
-  .player-wrapper .bg-player .artist-name {
-    font-size: 5px;
-  }
-}
-
+/* second parent div */
 .bg-player {
   /* background-color: var(--bg-cards); */
   background-color: rgb(24, 24, 24);
   color: white;
+}
+
+.img-album-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+/* title + song name */
+.player-wrapper .bg-player h5 {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  font-size: 10px !important;
+  margin-top: 1px !important;
+  padding-left: 6px !important;
+}
+
+.player-wrapper .artist-name {
+  font-size: 9px !important;
+  margin-top: 1px !important;
+  padding-left: 6px !important;
+}
+
+@media (max-width: 768px) {
+  .img-album-player {
+    width: 30%;
+    height: 30%;
+    margin-left: 1px;
+  }
+}
+
+/* heart + screen icons */
+@media (max-width: 768px) {
+  .bg-player div > .bi {
+    display: none;
+  }
+}
+
+/* play icons in the middle */
+
+@media (max-width: 768px) {
+  .controls-middle-player {
+    offset: 1col;
+  }
 }
 
 .controls-player a img {
@@ -175,6 +187,12 @@
   font-size: 8px;
 }
 
+@media (max-width: 768px) {
+  .player-part #hr {
+    min-width: 200px;
+  }
+}
+
 #input-player {
   background-color: grey;
   color: grey;
@@ -189,6 +207,7 @@
   opacity: 80%;
 }
 
+/* right icons player  */
 @media (max-width: 768px) {
   .right-icons-player {
     display: none;
