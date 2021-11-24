@@ -101,6 +101,7 @@
         width: 15rem;
         text-align: center;
         margin-bottom: 50px;
+        margin-left: 15px;
     }
     
     #recently-played .card img, #shows-to-try .card img{
