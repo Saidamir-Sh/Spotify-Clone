@@ -43,3 +43,16 @@ ul li {
     color: #fff;
 }
 /* End of List*/
+
+
+/* Media Queries */
+@media (max-width: 576px) { 
+    .nav-links ul li span {
+        display: none;
+    }
+    .custom-nav {
+        position: fixed;
+        bottom: 0px;
+        z-index: 9999;
+    }
+ }
