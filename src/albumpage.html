@@ -28,28 +28,34 @@
 
 
   <!-- Jumbotron -->
-  <div class="div-album-page pl-5 pt-5">
+  <div class="container-fluid div-album-page pl-lg-5 pt-5">
     <!-- img + text -->
-    <div class="d-flex justify-content-center" id="img-text-album ">
-      <img class="mr-2 position-relative " src="/assets/albumpage/bohemian-rhapsody-cover.png"
+    <div class="row d-block d-md-flex d-md-inline justify-content-center" id="img-text-album ">
+      <img class="position-relative" src="/assets/albumpage/bohemian-rhapsody-cover.png"
         alt="bohemian-rhapsody-album-cover" width="300px" height="300px">
       <div class="text-white align-self-end">
         <h4>ALBUM</h4>
         <h1>Bohemian Rhapsody(The Original Soundtrack)</h1>
         <p><img src="/assets/albumpage/bohemian-rhapsody-cover.png" class="rounded-img"
             alt="band-logo-img-spotify"><span>
-            Queen</span> - 2018 - 22 songs, 1 hr
-          19 min</p>
+            Queen</span> <span class="d-none d-md-inline">- 2018 - 22 songs, 1 hr
+            19 min
+          </span></p>
       </div>
     </div>
     <!-- end img + text -->
 
     <!--  buttons part -->
-    <div class="flex-row align-content-center buttons-wrapper">
-      <div class="position-absolute album-btn">
-        <a id="play-btn-album"><img src="/assets/playicons/Play.png" width="15px" alt=""></a>
-        <i class="bi bi-heart"></i>
+    <div class="flex-row d-md-inline align-content-md-center buttons-wrapper">
+      <div class="position-absolute d-flex album-btn d-inline">
+        <div id="btn-play-album" class="d-none d-md-flex justify-content-center align-items-center"><i
+            class="bi bi-play-fill"></i>
+        </div>
+        <i class="bi bi-heart text-white"></i>
         <a id="dots-btn-album">...</a>
+        <div id="btn-play-sm-album" class="d-inline d-md-none d-flex justify-content-center align-items-center"><i
+            class="bi bi-play-fill"></i>
+        </div>
       </div>
     </div>
     <!--  end buttons part -->
@@ -69,25 +75,27 @@
   <!-- Player -->
   <div class="player-wrapper container-fluid px-0 fixed-bottom">
 
-    <div class="d-block d-md-flex flex-md-row justify-content-between bg-player">
+    <div class="row d-block d-md-flex flex-md-row justify-content-between bg-player">
 
       <!--  img + title + artist-name -->
-      <div class="d-flex justify-items-center img-wrapper mt-2 col-3 col-md-1">
+      <div class="d-flex align-items-center img-wrapper mt-2 col-3 col-md-1">
         <img class="img-album-player" src=" /assets/playicons/c49c9f23611294a7f7fbcbee3a22b2af.png"
           alt="queen-the-game-cover-art">
-        <div class="d-flex flex-column mt-1 pl-1 mt-lg-3 pl-lg-3">
-          <h5>Another One Bites The Dust - Remastered 2011 </h5>
+        <div class="d-flex flex-column mt-1 pl-1">
+          <h5>Another One Bites The Dust - Remastered 2011</h5>
           <p class="artist-name">Queen</p>
         </div>
-        <div class="d-flex col-1 ml-2 mt-2"><i class="bi bi-heart mr-3" id="heart-player"></i>
+        <div class="d-flex col-1 mb-4 align-items-center">
+          <i class="bi bi-heart mr-3" id="heart-player"></i>
+          <img class="d-inline d-md-none" src="/assets/playicons/Play.png" width="20px" height="20px" alt="">
           <i class="bi bi-aspect-ratio"></i>
         </div>
       </div>
       <!--  end img + title + artist-name -->
 
       <!-- play icons  -->
-      <div class="controls-player">
-        <div class="offset-6 col-1 col-md-2 d-flex justify-content-between mt-2">
+      <div id="play-last-one" class="controls-player justify-content-center">
+        <div class="offset-lg-6 col-1 col-md-2 d-flex justify-content-lg-between mt-2">
           <a href="#"><img src="/assets/playicons/Shuffle.png" alt="shuffle-icon">
           </a>
           <a><img src="/assets/playicons/Previous.png" alt="previous-icon">
@@ -99,7 +107,7 @@
           <a><img src="/assets/playicons/Repeat.png" alt="repeat-icon">
           </a>
         </div>
-        <div class="d-flex align-items-center justify-content-start player-part">
+        <div class="d-flex align-items-center justify-content-lg-start player-part">
           <span>0.12</span>
           <span id="hr"></span>
           <span>3.34</span>
@@ -108,7 +116,7 @@
       <!-- end play icons  -->
 
       <!--  icons-right-volume -->
-      <div class="d-flex flex-row justify-content-end mr-5 mt-2 col-4 col-md-2 right-icons-player">
+      <div class="d-flex flex-row justify-content-end mr-5 mt-4 col-4 col-md-2 right-icons-player">
         <i class="bi bi-text-indent-left pr-2"></i>
         <i class="bi bi-speaker-fill pr-2"></i>
         <i class="bi bi-volume-up"></i>

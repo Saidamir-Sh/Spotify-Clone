@@ -10,6 +10,47 @@
   );
 }
 
+.div-album-page > div > img {
+  box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
+}
+
+@media screen and (max-width: 768px) {
+  .div-album-page > div > img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div-album-page .text-white h4 {
+    display: none !important;
+  }
+  .div-album-page .text-white h1 {
+    font-size: 16px !important;
+  }
+
+  .div-album-page .text-white span:first-of-type::after {
+    content: "Album • 2018";
+    display: block;
+    margin-top: 6px;
+    margin-left: 6px;
+    font-size: 8px;
+    font-weight: 500;
+    color: rgba(194, 194, 194, 0.753);
+  }
+}
+
+.div-album-page > div > div {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .rounded-img {
   display: inline-block;
   width: 25px;
@@ -19,7 +60,7 @@
 }
 
 .div-album-page .text-white h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -27,7 +68,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 800;
 }
 
@@ -36,54 +77,55 @@
   font-weight: 200;
 }
 
-.div-album-page .text-white span {
+.div-album-page .text-white span:first-of-type {
   font-size: 10px;
   font-weight: 800;
 }
 
-.buttons-wrapper {
-  background-color: rgba(5, 5, 5, 0.246);
-}
-
+/* buttons part */
 .album-btn {
   display: block;
   margin: auto;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-left: 6rem;
 }
 
-#play-btn-album {
-  display: inline-block;
+#btn-play-album {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: green;
-  color: white;
-  text-align: center;
-  border: none;
-  margin-right: 15px;
-  cursor: pointer;
+  background-color: var(--green);
+  margin-right: 20px;
 }
 
-#play-btn-album img {
-  margin-top: 15px;
-  margin-left: 2px;
+#btn-play-sm-album {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--green);
+  color: white;
+  margin-left: 38rem;
 }
 
-#play-btn-album ~ i {
+#btn-play-album i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.bi .bi-heart i {
   color: white;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0.8rem;
 }
 
 #dots-btn-album {
   color: white;
   font-size: 30px;
   font-weight: 300;
-  margin-left: 15px;
-  margin-bottom: 2rem;
+  margin-left: 20px;
+  margin-bottom: 1.5rem;
 }
 
 /* End of Jumbotron*/
@@ -126,26 +168,34 @@
 
 @media (max-width: 768px) {
   .img-album-player {
-    width: 30%;
-    height: 30%;
-    margin-left: 1px;
+    width: 75%;
+    height: 75%;
+    margin: 0.5px;
+  }
+  .player-wrapper .bg-player h5 {
+    max-width: 200px;
+  }
+
+  .bg-player > div > :last-child {
+    margin-left: 15px;
   }
 }
 
 /* heart + screen icons */
-@media (max-width: 768px) {
-  .bg-player div > .bi {
+
+@media (max-width: 850px) {
+  .bg-player div > .bi-aspect-ratio {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .bg-player div > .bi-heart {
     display: none;
   }
 }
 
 /* play icons in the middle */
-
-@media (max-width: 768px) {
-  .controls-middle-player {
-    offset: 1col;
-  }
-}
 
 .controls-player a img {
   width: 10px;
@@ -187,12 +237,6 @@
   font-size: 8px;
 }
 
-@media (max-width: 768px) {
-  .player-part #hr {
-    min-width: 200px;
-  }
-}
-
 #input-player {
   background-color: grey;
   color: grey;
@@ -207,10 +251,24 @@
   opacity: 80%;
 }
 
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  #play-last-one {
+    margin-left: 25%;
+  }
+
+  .player-part #hr {
+    min-width: 160px;
+  }
+
+  .player-part #hr {
+    min-width: 200px;
+  }
+}
+
 /* right icons player  */
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .right-icons-player {
-    display: none;
+    display: none !important;
   }
 }
 /* End of Player style*/
