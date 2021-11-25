@@ -2,12 +2,26 @@
 
 /* Album Jumbotron */
 
+#nav-album-page {
+  background-color: rgb(80, 28, 65) !important;
+  position: sticky;
+  max-height: 5%;
+}
+
 .div-album-page {
-  background: linear-gradient(
-    180deg,
-    rgba(166, 58, 134, 0.911) 10%,
-    rgba(18, 18, 18, 1) 110%
-  );
+  background-color: rgba(166, 58, 134, 0.911);
+}
+
+#arrows-album {
+  display: block;
+  align-items: center;
+  padding: 0.2rem 1.5rem;
+}
+
+#profile-album {
+  display: block;
+  align-items: center;
+  padding: 0.2rem;
 }
 
 .div-album-page > div > img {
@@ -16,17 +30,18 @@
   -moz-box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
 }
 
-@media screen and (max-width: 768px) {
-  .div-album-page > div > img {
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+/* media queries upper part */
 
 @media screen and (max-width: 768px) {
+  #profile-album {
+    display: none;
+  }
+
+  #img-text-album > div {
+    margin-right: 110px;
+    margin-top: 115px;
+  }
+
   .div-album-page .text-white h4 {
     display: none !important;
   }
@@ -43,7 +58,35 @@
     font-weight: 500;
     color: rgba(194, 194, 194, 0.753);
   }
+
+  .div-album-page > div > img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+@media screen and (min-width: 769px) {
+  #upper-nav-album {
+    width: 100%;
+  }
+  #buttons-album-wrapper {
+    padding-left: 1rem;
+  }
+  #profile-album {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  #img-text-album > div {
+    margin-top: 190px;
+  }
+}
+
+/* end media queries upper part */
 
 .div-album-page > div > div {
   margin-top: 15px;
@@ -60,35 +103,35 @@
 }
 
 .div-album-page .text-white h4 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 800;
 }
 
 .div-album-page .text-white h1 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 27px;
+  word-wrap: break-word;
+  font-size: 40px;
   font-weight: 800;
 }
 
 .div-album-page .text-white p {
-  font-size: 10px;
-  font-weight: 200;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .div-album-page .text-white span:first-of-type {
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
 }
 
 /* buttons part */
+
+#buttons-album-wrapper {
+  background-color: rgba(80, 28, 65, 0.616) !important;
+}
 .album-btn {
   display: block;
-  margin: auto;
   align-items: center;
-  margin-top: 2rem;
-  margin-left: 6rem;
+  padding: 0.2rem 1.5rem;
 }
 
 #btn-play-album {
@@ -105,7 +148,7 @@
   border-radius: 50%;
   background-color: var(--green);
   color: white;
-  margin-left: 38rem;
+  margin-left: 11rem;
 }
 
 #btn-play-album i {
@@ -144,10 +187,11 @@
 }
 
 .img-album-player {
-  width: 100%;
-  height: 100%;
+  max-width: 75%;
+  max-height: 75%;
   object-fit: cover;
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* title + song name */
@@ -166,7 +210,9 @@
   padding-left: 6px !important;
 }
 
-@media (max-width: 768px) {
+/* media queries title + song */
+
+@media (max-width: 767px) {
   .img-album-player {
     width: 75%;
     height: 75%;
@@ -180,6 +226,8 @@
     margin-left: 15px;
   }
 }
+
+/* end media queries title + song */
 
 /* heart + screen icons */
 
@@ -251,7 +299,7 @@
   opacity: 80%;
 }
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   #play-last-one {
     margin-left: 25%;
   }
@@ -267,6 +315,9 @@
 
 /* right icons player  */
 @media screen and (max-width: 767px) {
+  #play-last-one div {
+    display: none !important;
+  }
   .right-icons-player {
     display: none !important;
   }
