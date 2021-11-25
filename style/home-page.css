@@ -1,8 +1,27 @@
 @import url(./root.css);
+ul li {
+    list-style: none;
+}
+.nav-links ul li {
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 2em;
+}
+.nav-links ul li i {
+    margin-right: .5em;
+    font-size: 1.3rem !important;
+}
+.nav-list a {
+    color: rgb(243, 238, 230);
+    text-decoration: none;
+    padding: .5em 0em;
+}
+
+
 /* Good Morning */
 .good-morning {
-    background:  -webkit-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 80%);
-    background:-moz-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 80%);
+    background:  -webkit-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 40%);
+    background:-moz-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 40%);
 }
 .icon-round {
     width: 2rem;
@@ -152,4 +171,3 @@
 /* Shows to try  */
 
 /* End of  Shows to try */
-
