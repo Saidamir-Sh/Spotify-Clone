@@ -1,7 +1,8 @@
 @import url(./root.css);
 /* Good Morning */
 .good-morning {
-    background: linear-gradient(to bottom, rgb(155, 3, 0), rgb(18,18,18));
+    background:  -webkit-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 80%);
+    background:-moz-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 80%);
 }
 .icon-round {
     width: 2rem;
