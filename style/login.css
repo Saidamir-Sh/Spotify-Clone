@@ -29,6 +29,57 @@ html,
     margin-left: 35%;
     margin-right: 35%;
 }
+
+/* responsivity */
+@media screen and (max-width:1000px) {
+    
+    .main_wrap{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+ }
+
+ @media screen and (max-width:749px) {
+    
+    .main_wrap{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+ }
+
+ @media screen and (max-width:500px) {
+    
+    .main_wrap{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+ }
+
+ @media screen and (max-width:335px) {
+    
+    .main_wrap{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+ }
+
+ @media screen and (max-width:335px) {
+    
+    .main_wrap{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+ }
+
+ @media screen and (max-width:330px) {
+    
+    .main_wrap{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+ }
+
 .container-fluid{
     border-bottom: solid 1px  rgb(214, 211, 211);
 }
@@ -49,6 +100,20 @@ html,
     letter-spacing: 2px;
 }
 
+@media  screen and (max-width:360px) {
+        
+    .fb_btn{
+        width: 77%;
+        background-color: #3E5A9B;
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+}
+
 .apple_btn{
     width: 100%;
     background-color: #000000;
@@ -58,6 +123,21 @@ html,
     font-size: 1rem;
     letter-spacing: 2px;
 }
+
+@media  screen and (max-width:360px) {
+        
+    .apple_btn{
+        width: 77%;
+        background-color: #000000;
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+}
+
+
 
 .log_in{
   background-color: var(--green);
@@ -71,6 +151,84 @@ html,
 
      margin:0, auto;
 }
+
+@media  screen and (max-width:360px) {
+        
+    .info_wrap{
+        width: 77%;
+        margin: auto;
+        
+        
+    }
+
+   #log-in_btn{
+        width: 56%;
+        font-size: 0.7rem;
+    }
+
+    
+    #remember_text{
+
+        font-size: 0.7rem;
+        margin-left:10% !important; 
+    }
+
+    #forget_password,#no_account{
+        font-size: 0.7rem;
+    }
+
+    #sign_up,#terms {
+          
+        font-size: 0.7rem !important;
+    }
+
+  
+}
+
+@media  screen and (max-width:280px) {
+        
+    .info_wrap{
+        width: 80%;
+        margin: auto;
+        
+        
+    }
+
+    .fb_btn{
+        width: 77%;
+        background-color: #3E5A9B;
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+
+
+   #log-in_btn{
+        width: 30%;
+        font-size: 0.5rem;
+    }
+
+    
+    #remember_text{
+
+        font-size: 0.7rem;
+        margin-left:10% !important; 
+    }
+
+    #forget_password,#no_account{
+        font-size: 0.7rem;
+    }
+
+    #sign_up,#terms {
+          
+        font-size: 0.7rem !important;
+    }
+
+  
+}
+
 
 .container-fluid>.main_wrap> .info_wrap> .forgot{
     border-bottom: solid 1px green;
