@@ -12,6 +12,7 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../style/homepage.css">
   <link rel="stylesheet" href="../style/nav-player.css">
+  <link rel="stylesheet" href="../style/navbar.css">
   <!-- Root CSS -->
   <link rel="stylesheet" href="../style/root.css">
   
@@ -20,85 +21,100 @@
 </head>
 <body>
   
-  <div class="container-fluid d-flex flex-row">
-    <!-- Navbar -->
-    <aside id="nav col-md-2">
-      <div class=" row d-flex flex-column ml-3 align-items-start" style="height: 100%; position:relative">
-        <div class="col flex-grow-0" style="max-width: 0.33%;">
-          <!--the nav menu collapse on small screen-->
-          <div class="d-flex mt-3 mx-3"><img src="/assets/logo/Spotify_Logo_White.png" alt="" srcset="" width="130px">
+   <!-- Navbar -->    
+     
+   <aside id="nav">
+    <div class=" d-flex flex-column ml-1 align-items-start main_wrapper" style="height: 100%; position:relative">
+        <div class="col-2 flex-grow-0 first_column" style="max-width: 0.33%;">
+                   
+           <div class="d-flex mt-3 mx-3 logo"><img src="/assets/logo/Spotify_Logo_White.png" alt="" srcset="" width="130px">
           </div>
-          <div class=" d-flex align-items-center mt-4 mx-3 text-muted">
-            <i class="bi bi-house-door-fill " style="font-size: 1.5rem;"></i> 
-            <div class="  font-weight-bold ml-3">Home</div>
+           <div class=" d-flex align-items-center mt-4 mx-1  hover_link">
+             <i class="bi bi-house-door-fill " style="font-size: 1.0rem;"></i> 
+             <div class="  font-weight-bold ml-3">Home</div>
           </div>
-          <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
-            <i class="bi bi-search" style="font-size: 1.5rem;"></i> 
+          <div class=" d-flex align-items-center mt-1 mx-1  hover_link">
+            <i class="bi bi-search" style="font-size: 1.0rem;"></i> 
             <div class="  font-weight-bold ml-3">Search</div>
-          </div>
-          <div class=" d-flex align-items-center mt-3 mx-3 text-muted">
-            <img src="/assets/logo/library.png" style="width: 1.5rem; " class=""></img> 
-            <div class=" d-inline  w-100 font-weight-bold ml-3 ">Your library </div>
-          </div>
-          <div class=" d-flex align-items-center mt-3 mx-3 text-muted">
-            <img src="" style="width: 1.5rem; "></img> 
-            <div class="font-weight-bold mx-0 p-0  d-inline"></div>
-          </div>
-          
-          <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
-            <i class="bi bi-plus-square" style="font-size: 1.5rem;"></i> 
+         </div>
+         <div class=" d-flex align-items-center mt-1 mx-1  hover_link">
+          <i class="bi bi-collection-fill" style="font-size: 1.0rem;"></i>
+          <div class=" d-inline  w-100 font-weight-bold ml-3 ">Library </div>
+       </div>
+       <div class=" d-flex align-items-center mt-1 mx-1  hover_link">
+        
+        <div class="font-weight-bold mx-1 p-0  d-inline"></div>
+     </div>
+ 
+     <div class=" d-flex align-items-center mt-2 mx-1  hover_link">
+            <i class="bi bi-plus-square" style="font-size: 1.0rem;"></i> 
             <div class="  font-weight-bold ml-3">Create Playlist</div>
-          </div>
-          
-          <div class=" d-flex align-items-center mt-2 mx-3 text-muted">
-            <img src="/assets/homepage/liked songs.jpg"  style="width: 1.5rem; "alt="" srcset="">
-            <div class="  font-weight-bold ml-3">Liked Songs</div>
-          </div>
-          
-        </div>
-        
-        
-        <div class="col-md-2 mt-5 mx-2 songs overflow-auto" style="max-width: 80%; max-height: 100%; ">
-          
-          <div class="d-flex align-items-center text-muted  mt-2 " ><p>Song title</p></div>
-          <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
-          <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
-          <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
-          <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
-          <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
-          <div class="d-flex align-items-center text-muted text-justify  mt-1"><p>Song title</p></div>
-        </div>
-        
-        
-        <div class="d-flex flex-column align-items-baseline text-right bottom_nav">
-          <i class="bi bi-arrow-down-circle" style="font-size: 1.5rem;" ></i>
-          <div class="text-right text-white" style="position: absolute;">Install App</div>
-        </div>
-      </div> 
-    </aside>  
-    
+         </div>
+
+    <div class=" d-flex align-items-center mt-2 mx-1 hover_link ">
+      <img src="/assets/homepage/liked songs.jpg"  style="width: 1.0rem; "alt="" srcset="">
+      <div class="  font-weight-bold ml-3">Liked Songs</div>
+   </div>
+
+  </div>
+           
+
+        <div class="col-2 flex-grow-1  mt-2 mx-2 songs  playlist" style="max-width: 80%; overflow: scroll; ">
+
+         <div class="hover_link d-flex align-items-center  font-weight-bold  mt-2 " ><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+         <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+      </div>
+      <div id="download" class=" d-flex align-items-center justify-content-end mt-2 mx-3  hover_link">
+        <i class="bi bi-arrow-down-circle hover_link" style="font-size: 1.5rem;"></i> 
+        <div class="hover_link font-weight-bold ml-3">Install App</div>
+     </div>
+
+
+   </div> 
+      
+</aside> 
+
 <!-- mobile -->
 <div id="mobile_view">
-         <div class="row d-flex justify-content-center  " style="width: 100%; padding-left: 20%; padding-right: 20%;">
-           <div class="col-4 mt-2  d-flex flex-column align-items-center
-           text-muted ">
-                <i class="bi bi-house-door-fill  " style="font-size: 1.0rem;"></i> 
-                <div class=""> <h6>Home</h6></div> 
-            </div>
-           <div class="col-4  mt-2 d-flex flex-column align-items-center  text-muted">
-                <i class="bi bi-search" style="font-size: 1.0rem;"></i> 
-                <div class=""> <h6 class="fs-xsm">Search</h6></div> 
-              </div>
-          
-           <div class="col-4  mt-2 d-flex flex-column align-items-center  text-muted">
-              <i class="bi bi-collection-fill" style="font-size: 1.0rem;"></i>
-              <div class=""> <h6>Library</h6></div>           
-            </div>
+   <div class="row d-flex justify-content-center  " style="width: 100%; padding-left: 20%; padding-right: 20%;">
+     <div class="col-4 mt-2  d-flex flex-column align-items-center
+      hover_link">
+          <i class="bi bi-house-door-fill hover_link " style="font-size: 1.0rem;"></i> 
+          <div class=""> <h6>Home</h6></div> 
+      </div>
+     <div class="col-4  mt-2 d-flex flex-column align-items-center  hover_link">
+          <i class="bi bi-search" style="font-size: 1.0rem;"></i> 
+          <div class=""> <h6 class="fs-xsm">Search</h6></div> 
+        </div>
+    
+     <div class="col-4  mt-2 d-flex flex-column align-items-center  hover_link">
+        <i class="bi bi-collection-fill" style="font-size: 1.0rem;"></i>
+        <div class=""> <h6>Library</h6></div>           
+      </div>
 
-           </div>
-        </div>   
-      
-   <!-- End of Navbar-->
+     </div>
+  </div>
+   
+  
+ 
+<!-- End of Navbar-->
+
       
       <main>
           <!-- Good Morning -->
