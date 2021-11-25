@@ -10,6 +10,12 @@
   max-height: 5%;
 }
 
+* #album-id-player a,
+i {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.486);
+}
+
 .div-album-page {
   background-color: rgba(166, 58, 134, 0.911);
 }
@@ -132,6 +138,8 @@
 .div-album-page .text-white span:first-of-type {
   font-size: 16px;
   font-weight: 800;
+  text-decoration: none;
+  text-underline-offset: none;
 }
 
 /* buttons part */
@@ -151,6 +159,17 @@
   border-radius: 50%;
   background-color: var(--green);
   margin-right: 20px;
+}
+
+.on-pulse:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.342),
+    0 17px 50px 0 rgba(0, 0, 0, 0.103);
+  transform: scale(1.05);
+}
+
+.enlight:hover {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #btn-play-sm-album {
