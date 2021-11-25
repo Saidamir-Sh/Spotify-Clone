@@ -34,9 +34,6 @@
 }
 
 
-
-
-
 #recently-played .card, #shows-to-try .card{
     background-color: var(--bg-cards);
     color: white;
@@ -81,6 +78,10 @@
     text-overflow: ellipsis; 
 }
 
+#shows-to-try > div > div.row {
+    width: -moz-available;
+}
+
 
 @media screen and (max-width: 576px){
     
@@ -101,6 +102,7 @@
         width: 15rem;
         text-align: center;
         margin-bottom: 50px;
+        margin-left: 34px;
     }
     
     #recently-played .card img, #shows-to-try .card img{
@@ -114,8 +116,8 @@
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .custom-row {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: -43px;
+        margin-right: auto; 
         padding-left: 46px;
         padding-right: -49px;
     }
@@ -149,3 +151,4 @@
 /* Shows to try  */
 
 /* End of  Shows to try */
+

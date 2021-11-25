@@ -174,7 +174,45 @@
 /* End of Jumbotron*/
 
 /* List */
+.btn-play {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+.bi-play-fill  {
+  font-size: 2rem;
+  color: #fff;
+}
+.songs-list small {
+  color: #fff;
+}
+#songs-list {
+  color: white;
+}
 
+.light-text {
+  color: rgba(194, 194, 194, 0.753);
+}
+
+#songs-list p {
+  font-size: .75rem;
+  text-transform: capitalize;
+}
+
+#songs-list div div:first-child div:nth-child(2) p {
+  color: rgba(194, 194, 194, 0.753);
+  text-transform: uppercase;
+}
+
+#songs-list > div > div:first-child {
+  border-bottom: 1px solid rgba(212, 212, 212, 0.253);
+  padding-bottom: .5rem;
+}
+
+#songs-list > div > div:first-child i {
+  color:  rgba(194, 194, 194, 0.753);
+}
 /* End of List*/
 
 /* Player style */

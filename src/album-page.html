@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../style/albumpage.css">
+    <link rel="stylesheet" href="../style/nav-player.css">
+    <link rel="stylesheet" href="../style/artistpage.css">
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="../style/root.css">
+
+    <title>Album</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+
+        <!-- */*/*/*/*/*/*/*/*  Navbar */*/*/*/*/*/*/*/*/*/*/* -->
+        <div class="col-lg-2 col-md-2 sticky-top" style="background-color: rgb(18,18,18); height: 100vh;">
+          <nav class="nav d-flex flex-column justify-content-between">
+            <div class="nav-logo py-3">
+              <img style="width: 6em;" src="../assets/logo/Spotify_Logo_White.png" alt="Logo">
+            </div>
+            <div class="nav-links py-2">
+              <ul class="text-white">
+                <li><i class="bi bi-house-door-fill"></i> Home</li>
+                <li><i class="bi bi-search"></i> Search</li>
+                <li><i class="bi bi-music-note-list"></i>Your Library</li>
+              </ul>
+            </div>
+            <div class="py-1">
+              <p class="text-white font-weight-bold" style="font-size: .9rem;"> <i class="bi bi-plus-square text-white" style="font-size: 1.5rem;"></i>  Create Playlist</p>
+              <p class="text-white font-weight-bold" style="font-size: .9rem;"><img style="width: 1.5em;" src="../assets/homepage/liked songs.jpg" alt=""> Liked Songs</p>
+            </div>
+            <div class="overflow-auto nav-list d-flex flex-column" style="font-size: .8rem; height: 50vh;">
+              <a href="#">Funky Heavy Bluesy</a>
+              <a href="#">Your Top Songs 2020</a>
+              <a href="#">In Love With You</a>
+              <a href="#">This Is Rod Stewart</a>
+              <a href="#">FRANCHISE ft. Young Thug</a>
+              <a href="#">Your Top Songs 2019</a>
+              <a href="#">Palleggio</a>
+              <a href="#">This Is Joe Bonamassa</a>
+              <a href="#">Jun19</a>
+              <a href="#">Jack 30th Party 2</a>
+              <a href="#">Jack 30th Party</a>
+              <a href="#">This Is Opeth</a>
+              <a href="#">Metal Ballads</a>
+              <a href="#">New Playlist</a>
+              <a href="#">Your Top Songs 2018</a>
+              <a href="#">Jazz Classics Blue Note Edition</a>
+            </div>
+            <div>
+              <p class="text-start text-white" style="font-size: .8rem;"><i class="bi bi-arrow-down-circle"></i> Install App</p>
+            </div>
+          </nav>
+        </div>
+        <!-- */*/*/*/*/*/*/*/* End of Navbar */*/*/*/*/*/*/*/*/*/*/* -->
+
+        <!-- */*/*/*/*/*/*/*/*  Album Page */*/*/*/*/*/*/*/*/*/*/* -->
+        <div class="col-lg-10 col-md-10" style="width: 100%;background:-moz-linear-gradient(-90deg, rgba(166, 58, 134, 1) 0%, rgba(166, 58, 134, 1) 5%, rgba(18, 18, 18, 1) 55%); ">
+          <!-- Jumbotron -->
+          <div class="container-fluid" style="height: 50vh;">
+            <div class="row d-flex justify-content-between pt-3 h-100">
+              <div class="col-lg-9">
+                <div class="d-flex justify-content-between pb-5" style="width: 8%;">
+                  <a class="icon-round text-white"><i class="bi bi-arrow-left-short" style="font-size: 2rem;"></i></a>
+                  <a class="icon-round text-white"><i class="bi bi-arrow-right-short" style="font-size: 2rem;"></i></a>
+                </div>
+               <div class="pt-5 position-absolute d-flex" style="bottom: 50px;">
+                 <img class="mr-5" style="width: 11em;" src="../assets/albumpage/bohemian-rhapsody-cover.png" alt="Album">
+                 <div class="text-white">
+                     <small>ALBUM</small>
+                     <h2>Bohemian Rhapsody(The Original Soundtrack)</h2>
+                     <small><img class="rounded-circle" style="width: 2em;" src="../assets/albumpage/bohemian-rhapsody-cover.png"> <span>Queen</span> - 2018 - 22 songs, 1 hr 19 min</small>
+                 </div>
+               </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="d-flex justify-content-center align-items-start" style="background-color: rgba(0, 0, 0, 0.185); border-radius: 15px;">
+                  <img  class="mr-2 align-self-center" style="width: 2em; border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1281577317194760196/mG74FQIP.jpg" alt="Profile">
+                  <p class="text-white mt-3 font-weight-bold" style="font-size: .8rem;">Diego Banovaz</p>
+                  <i class="bi bi-caret-down-fill mt-3 text-white ml-1" style="font-size: .8rem;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ENd of Jumbotron-->
+
+          <!-- Song List -->
+          <div class="album-list">
+            <div class="d-flex justify-content-between align-items-center pt-4 ml-3" style="width: 15%;">
+              <div class="btn-play d-flex justify-content-center align-items-center"><i  class="bi bi-play-fill"></i></div>
+              <i class="bi bi-heart text-white" style="font-size: 2rem;"></i>
+              <i class="bi bi-three-dots text-white" style="font-size: 1.3rem;"></i>
+            </div>
+            <div>
+                <section id="songs-list">
+                    <div class="container-fluid mx-0">
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">#</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">title</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto d-md-flex justify-content-md-center my-0">
+                          <i class="bi bi-clock my-0 align-self-center"></i>
+                        </div>
+                      </div>
+                      
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">1</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">20th century fox fanfare</p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">0:25</p>
+                        </div>
+                      </div>
+            
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">2</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">somebody to love</p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">4:55</p>
+                        </div>
+                      </div>
+            
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">3</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">doing all right - ...revisited</p>
+                            <p class="light-text my-0">smile</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">3:16</p>
+                        </div>
+                      </div>
+            
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">4</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">keep yourself alive - live </p>
+                            <p class="light-text my-0">smile</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">3:56</p>
+                        </div>
+                      </div>
+            
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">5</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">killer queen</p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">2:59</p>
+                        </div>
+                      </div>
+            
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">6</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">fat bottomed girls - live in paris</p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">4:37</p>
+                        </div>
+                      </div>
+            
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">7</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">bohemian rapsody</p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">5:54</p>
+                        </div>
+                      </div>
+              
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">8</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">now i'm here - live </p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">4:25</p>
+                        </div>
+                      </div>
+              
+                      <div class="row d-flex justify-content-center my-3">
+                        <span class="d-flex d-inline align-self-center">
+                          <div class="col-1 d-flex justify-content-center my-0">
+                            <p class="light-text my-0 align-self-center">9</p>
+                          </div>
+                          <div class="col-9 my-0">
+                            <p class="my-0">crazy little thing called love</p>
+                            <p class="light-text my-0">queen</p>
+                          </div>
+                        </span>
+                        <div class="col-2 d-inline ml-auto align-self-center d-md-flex justify-content-md-center my-0">
+                          <p class="light-text my-0 align-self-center">2:43</p>
+                        </div>
+                      </div>
+            
+                    </div>
+                  </section>
+                  <!--end of bottom album section-->
+            </div>
+          </div>
+          <!--End of Song List-->
+        </div>
+      </div>
+    </main>   
+    <!-- Player -->
+
+    <!-- End of Player-->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  </body>
+</html>
