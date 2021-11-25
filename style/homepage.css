@@ -78,6 +78,20 @@
     text-overflow: ellipsis; 
 }
 
+#recently-played .card-body p:hover, #shows-to-try .card-body p:hover {
+    width: 100%;
+    max-height: 50%;
+    font-size: .8em;
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
+}
+
+#recently-played .card:hover, #shows-to-try .card:hover {
+    -webkit-box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308); 
+    box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308);
+}
+
 #shows-to-try > div > div.row {
     width: -moz-available;
 }
