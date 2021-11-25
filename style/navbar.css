@@ -29,12 +29,19 @@
   z-index: 10;
   display: flex;
   justify-content: center;
+  transition: 0.3s;
+  
+
 
 }
 
-#mobile_view:hover{
+#mobile_view > div> div:hover{
+
     color: white;
     cursor: pointer;
+    
+    
+   
 }
 
 
@@ -84,14 +91,20 @@
  font-weight: 600;
 }
 
+
+@media screen and (min-width:580px) {
+  
 #nav > .main_wrapper> .first_column> .hover_link:hover,
 #nav > .main_wrapper> .playlist> .hover_link:hover,
 #nav > .main_wrapper> #download> .hover_link:hover
-{
-   
+{  
     color: white;
     cursor: pointer;
-  }
+  } 
+
+
+}
+
 
    
 
@@ -141,4 +154,17 @@
 #nav > div > .playlist::-webkit-scrollbar-button{
     color: #aaaaaa;
 }
+
+
+@media screen and (max-width: 576px) {
+  
+#mobile_view > div > div > :hover{
+
+   color:white;
+   cursor: pointer;
+}
+
+}
+
+
 /* End of Navbar Style*/
