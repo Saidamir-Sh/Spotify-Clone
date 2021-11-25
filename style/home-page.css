@@ -1,0 +1,173 @@
+@import url(./root.css);
+ul li {
+    list-style: none;
+}
+.nav-links ul li {
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 2em;
+}
+.nav-links ul li i {
+    margin-right: .5em;
+    font-size: 1.3rem !important;
+}
+.nav-list a {
+    color: rgb(243, 238, 230);
+    text-decoration: none;
+    padding: .5em 0em;
+}
+
+
+/* Good Morning */
+.good-morning {
+    background:  -webkit-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 40%);
+    background:-moz-linear-gradient(-90deg, rgba(155, 3, 0, 1) 0%, rgba(155, 3, 0, 1) 5%, rgba(18, 18, 18, 1) 40%);
+}
+.icon-round {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-round i {
+    color: #fff;
+    font-size: 2rem;
+}
+/* End of  Good Morning */
+
+
+/* Recently Played */
+.column {
+    float: left;
+    width: 12%;
+    padding: 0 5px;
+}
+
+.custom-row {
+    margin: 0px -67px;
+    padding-left: 46px;
+    padding-right: -49px;
+}
+
+
+#recently-played .card, #shows-to-try .card{
+    background-color: var(--bg-cards);
+    color: white;
+    height: 14rem;
+}
+
+#recently-played .card img, #shows-to-try .card img{
+    height: 8rem;
+}
+
+
+#recently-played h5, #shows-to-try h5 {
+    font-size: .8rem;
+    margin-top: .3rem;
+}
+
+#recently-played p, #shows-to-try p {
+    font-size: .75rem;
+    color: rgb(194, 194, 194);
+}
+
+#recently-played .card-body p, #shows-to-try .card-body p {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis; 
+}
+
+#recently-played h4, #shows-to-try h4 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#recently-played h6, #shows-to-try h6 {
+    color: rgb(194, 194, 194);
+    font-size: .7rem;
+}
+
+#recently-played .card-body p, #shows-to-try .card-body p {
+    white-space: nowrap;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#shows-to-try > div > div.row {
+    width: -moz-available;
+}
+
+
+@media screen and (max-width: 576px){
+    
+    .custom-row {
+        margin: 0px -67px;
+        padding-left: 46px;
+        padding-right: -49px;
+    }
+    
+    .column {
+        float: left;
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    #recently-played .card, #shows-to-try .card{
+        height: 14.5rem;
+        width: 15rem;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 34px;
+    }
+    
+    #recently-played .card img, #shows-to-try .card img{
+        height: 10rem;
+        width: 12rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .custom-row {
+        margin-left: -43px;
+        margin-right: auto; 
+        padding-left: 46px;
+        padding-right: -49px;
+    }
+    
+    .column {
+        width: 25%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 768px) {
+    #recently-played .card img, #shows-to-try .card img{
+        height: 10rem;
+        width: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #recently-played .card, #shows-to-try .card{
+        height: 16rem;
+        width: 12rem;
+        margin: auto;
+        text-align: center;
+    }
+}
+/* End of  recently played */
+
+
+/* Shows to try  */
+
+/* End of  Shows to try */
