@@ -1,7 +1,9 @@
 @import url(./root.css);
 
 /* Album Jumbotron */
-
+.song-list p{
+  color: #fff;
+}
 #nav-album-page {
   background-color: rgb(80, 28, 65) !important;
   position: sticky;

@@ -12,12 +12,13 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style/albumpage.css">
     <link rel="stylesheet" href='../style/albumpage-bottom.css'>
-    <link rel="stylesheet" href="../style/nav-player.css">
+    <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/artistpage.css">
     <!-- Root CSS -->
     <link rel="stylesheet" href="../style/root.css">
-
-    <title>Album</title>
+    <!-- Favicon -->
+    <title>Albums</title>
+    <link rel="icon" href="../assets/logo/green_spotify_logo.png">
   </head>
   <body>
     <main class="container-fluid">
@@ -25,43 +26,99 @@
 
         <!-- */*/*/*/*/*/*/*/*  Navbar */*/*/*/*/*/*/*/*/*/*/* -->
         <div class="col-lg-2 col-md-2 sticky-top" style="background-color: rgb(18,18,18); height: 100vh;">
-          <nav class="nav d-flex flex-column justify-content-between">
-            <div class="nav-logo py-3">
-              <img style="width: 6em;" src="../assets/logo/Spotify_Logo_White.png" alt="Logo">
+          <!-- Navbar -->    
+     
+      <aside id="nav">
+        <div class=" d-flex flex-column ml-1 align-items-start main_wrapper" style="height: 100%; position:relative">
+            <div class="col-2 flex-grow-0 first_column" style="max-width: 0.33%;">
+                       
+               <div class="d-flex mt-3 mx-3 logo"><img src="/assets/logo/Spotify_Logo_White.png" alt="" srcset="" width="130px">
+              </div>
+               <div class=" d-flex align-items-center mt-4 mx-1  hover_link">
+                 <i class="bi bi-house-door-fill " style="font-size: 1.0rem;"></i> 
+                 <div class="  font-weight-bold ml-3">Home</div>
+              </div>
+              <div class=" d-flex align-items-center mt-1 mx-1  hover_link">
+                <i class="bi bi-search" style="font-size: 1.0rem;"></i> 
+                <div class="  font-weight-bold ml-3">Search</div>
+             </div>
+             <div class=" d-flex align-items-center mt-1 mx-1  hover_link">
+              <i class="bi bi-collection-fill" style="font-size: 1.0rem;"></i>
+              <div class=" d-inline  w-100 font-weight-bold ml-3 ">Library </div>
+           </div>
+           <div class=" d-flex align-items-center mt-1 mx-1  hover_link">
+            
+            <div class="font-weight-bold mx-1 p-0  d-inline"></div>
+         </div>
+     
+         <div class=" d-flex align-items-center mt-2 mx-1  hover_link">
+                <i class="bi bi-plus-square" style="font-size: 1.0rem;"></i> 
+                <div class="  font-weight-bold ml-3">Create Playlist</div>
+             </div>
+
+        <div class=" d-flex align-items-center mt-2 mx-1 hover_link ">
+          <img src="/assets/homepage/liked songs.jpg"  style="width: 1.0rem; "alt="" srcset="">
+          <div class="  font-weight-bold ml-3">Liked Songs</div>
+       </div>
+
+      </div>
+               
+
+            <div class="col-2 flex-grow-1  mt-2 mx-2 songs  playlist" style="max-width: 80%; overflow: scroll; ">
+
+             <div class="hover_link d-flex align-items-center  font-weight-bold  mt-2 " ><p>Song title</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Funky Heavy Bluesy</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Your Top Songs 2020</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>In Love With You</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>FRANCHISE ft. Young Thug</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Your Top Songs 2019</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Palleggio</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>This Is Joe Bonamassa</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Jun19</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Jack 30th Party 2</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Jack 30th Party</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>This Is Opeth</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Metal Ballads</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>New Playlist</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+             <div class="hover_link d-flex align-items-center  font-weight-bold text-justify  mt-0"><p>Song title</p></div>
+          </div>
+          <div id="download" class=" d-flex align-items-center justify-content-end mt-2 mx-3  hover_link">
+            <i class="bi bi-arrow-down-circle hover_link" style="font-size: 1.5rem;"></i> 
+            <div class="hover_link font-weight-bold ml-3">Install App</div>
+         </div>
+    
+
+       </div> 
+          
+  </aside> 
+
+<!-- mobile -->
+<div id="mobile_view">
+       <div class="row d-flex justify-content-center  " style="width: 100%; padding-left: 20%; padding-right: 20%;">
+         <div class="col-4 mt-2  d-flex flex-column align-items-center
+          hover_link">
+              <i class="bi bi-house-door-fill hover_link " style="font-size: 1.0rem;"></i> 
+              <div class=""> <h6>Home</h6></div> 
+          </div>
+         <div class="col-4  mt-2 d-flex flex-column align-items-center  hover_link">
+              <i class="bi bi-search" style="font-size: 1.0rem;"></i> 
+              <div class=""> <h6 class="fs-xsm">Search</h6></div> 
             </div>
-            <div class="nav-links py-2">
-              <ul class="text-white">
-                <li><i class="bi bi-house-door-fill"></i> Home</li>
-                <li><i class="bi bi-search"></i> Search</li>
-                <li><i class="bi bi-music-note-list"></i>Your Library</li>
-              </ul>
-            </div>
-            <div class="py-1">
-              <p class="text-white font-weight-bold" style="font-size: .9rem;"> <i class="bi bi-plus-square text-white" style="font-size: 1.5rem;"></i>  Create Playlist</p>
-              <p class="text-white font-weight-bold" style="font-size: .9rem;"><img style="width: 1.5em;" src="../assets/homepage/liked songs.jpg" alt=""> Liked Songs</p>
-            </div>
-            <div class="overflow-auto nav-list d-flex flex-column" style="font-size: .8rem; height: 50vh;">
-              <a href="#">Funky Heavy Bluesy</a>
-              <a href="#">Your Top Songs 2020</a>
-              <a href="#">In Love With You</a>
-              <a href="#">In Love With You</a>
-              <a href="#">FRANCHISE ft. Young Thug</a>
-              <a href="#">Your Top Songs 2019</a>
-              <a href="#">Palleggio</a>
-              <a href="#">This Is Joe Bonamassa</a>
-              <a href="#">Jun19</a>
-              <a href="#">Jack 30th Party 2</a>
-              <a href="#">Jack 30th Party</a>
-              <a href="#">This Is Opeth</a>
-              <a href="#">Metal Ballads</a>
-              <a href="#">New Playlist</a>
-              <a href="#">Your Top Songs 2018</a>
-              <a href="#">Jazz Classics Blue Note Edition</a>
-            </div>
-            <div>
-              <p class="text-start text-white" style="font-size: .8rem;"><i class="bi bi-arrow-down-circle"></i> Install App</p>
-            </div>
-          </nav>
+        
+         <div class="col-4  mt-2 d-flex flex-column align-items-center  hover_link">
+            <i class="bi bi-collection-fill" style="font-size: 1.0rem;"></i>
+            <div class=""> <h6>Library</h6></div>           
+          </div>
+
+         </div>
+      </div>
+       
+      
+     
+    <!-- End of Navbar-->
         </div>
         <!-- */*/*/*/*/*/*/*/* End of Navbar */*/*/*/*/*/*/*/*/*/*/* -->
 
@@ -264,8 +321,61 @@
       </div>
     </main>   
     <!-- Player -->
+ <div id="album-id-player" class="player-wrapper container-fluid px-0 fixed-bottom">
 
-    <!-- End of Player-->
+    <div class="row d-block d-flex flex-row justify-content-between bg-player">
+      <!--  ciao -->
+      <!--  img + title + artist-name -->
+      <div class="d-flex flex-row align-items-center img-wrapper mt-2 col-3 col-md-1">
+        <img class="img-album-player" src=" /assets/playicons/c49c9f23611294a7f7fbcbee3a22b2af.png" width="300px"
+          height="300px" alt="queen-the-game-cover-art">
+        <div class="d-flex flex-column pl-1">
+          <h5>Another One Bites The Dust - Remastered 2011</h5>
+          <p class="artist-name">Queen</p>
+        </div>
+        <div class="d-flex col-1 mb-4 align-items-center">
+          <i class="bi bi-heart mr-3" id="heart-player"></i>
+          <img class="d-inline ml-5 ml-lg-0 d-md-none" src="/assets/playicons/Play.png" width="20px" height="20px"
+            alt="">
+          <i class="bi bi-aspect-ratio"></i>
+        </div>
+      </div>
+      <!--  end img + title + artist-name -->
+
+      <!-- play icons  -->
+      <div id="play-last-one" class="controls-player justify-content-center">
+        <div class="offset-lg-6 col-1 col-md-2 d-none d-md-flex justify-content-lg-between mt-2">
+          <a href="#"><img src="/assets/playicons/Shuffle.png" alt="shuffle-icon">
+          </a>
+          <a><img src="/assets/playicons/Previous.png" alt="previous-icon">
+          </a>
+          <a><i class="bi bi-play-fill play-icon-player"></i>
+          </a>
+          <a><img src="/assets/playicons/Next.png" alt="next-icon">
+          </a>
+          <a><img src="/assets/playicons/Repeat.png" alt="repeat-icon">
+          </a>
+        </div>
+        <div class="d-none d-md-flex align-items-center justify-content-lg-start player-part">
+          <span>0.12</span>
+          <span id="hr"></span>
+          <span>3.34</span>
+        </div>
+      </div>
+      <!-- end play icons  -->
+
+      <!--  icons-right-volume -->
+      <div class="d-flex flex-row justify-content-end mr-5 mt-3 col-4 col-md-2 right-icons-player">
+        <i class="bi bi-text-indent-left pr-2"></i>
+        <i class="bi bi-speaker-fill pr-2"></i>
+        <i class="bi bi-volume-up"></i>
+        <div class="input-wrapper"><input class="ml-1" id="input-player" type="range" value="100" />
+        </div>
+      </div>
+      <!--  end icons-right-volume -->
+    </div>
+  </div>
+  <!-- End of Player-->
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
