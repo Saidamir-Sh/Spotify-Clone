@@ -2,6 +2,14 @@
 
 /* Player style */
 
+@media screen and (max-width: 576px) {
+  #album-id-player > div {
+    max-width: 100%;
+    position: absolute;
+    bottom: 150px;
+  }
+}
+
 .player-wrapper {
   max-height: 4rem;
   background-color: rgb(24, 24, 24);
@@ -88,7 +96,6 @@
 }
 
 /* End of Player style*/
-
 
 /* Player style */
 
