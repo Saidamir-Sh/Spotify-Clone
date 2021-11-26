@@ -187,7 +187,7 @@ ul li {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     #recently-played .card img, #shows-to-try .card img{
         height: 10rem;
         width: 10rem;
@@ -206,6 +206,29 @@ ul li {
 /* End of  recently played */
 
 
-/* Shows to try  */
 
-/* End of  Shows to try */
+
+@media screen and (max-width: 576px) {
+    .margin-top {
+        margin-top: 38rem;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .margin-top {
+        margin-top: 45rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .margin-top {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .margin-top {
+        margin-top: 6rem;
+    }
+}
