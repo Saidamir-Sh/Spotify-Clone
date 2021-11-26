@@ -23,6 +23,7 @@
 
 #mobile_view {
   position: fixed;
+  bottom:0;
   background-color: black;
   z-index: 10;
   display: flex;
@@ -40,21 +41,23 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 576px) {
   #nav {
     display: none;
   }
 
-  #mobile_view {
-    position: absolute;
+   #mobile_view {
+    position: fixed;
     background-color: black;
-    /* z-index: 8; */
+    z-index: 8;
     bottom: 0;
     width: 100%;
     height: 10%;
     margin: 0;
-  }
-}
+  } 
+} 
+
 #nav > .main_wrapper > .playlist > .hover_link {
   color: #9e9898;
   font-size: 0.6rem;
