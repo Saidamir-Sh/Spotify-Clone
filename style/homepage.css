@@ -85,9 +85,14 @@
     text-overflow: clip;
     white-space: normal;
     word-break: break-all;
+    transition:0.3s;
+    cursor:pointer;
 }
 
+
 #recently-played .card:hover, #shows-to-try .card:hover {
+    transition:0.5s;
+    cursor:pointer;
     -webkit-box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308); 
     box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308);
 }
