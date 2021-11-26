@@ -88,3 +88,150 @@
 }
 
 /* End of Player style*/
+
+
+/* Player style */
+
+/* second parent div */
+.bg-player {
+  /* background-color: var(--bg-cards); */
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.img-album-player {
+  width: 35%;
+  height: 75%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* title + song name */
+.player-wrapper .bg-player h5 {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  font-size: 10px !important;
+  margin-top: 1px !important;
+  padding-left: 6px !important;
+}
+
+.player-wrapper .artist-name {
+  font-size: 9px !important;
+  margin-top: 1px !important;
+  padding-left: 6px !important;
+}
+
+/* media queries title + song */
+
+@media (max-width: 767px) {
+  .img-album-player {
+    width: 50%;
+    height: 70%;
+    margin-left: 5px;
+  }
+  .player-wrapper .bg-player h5 {
+    max-width: 200px;
+  }
+
+  .bg-player > div > :last-child {
+    margin-left: 15px;
+  }
+}
+
+/* end media queries title + song */
+
+/* heart + screen icons */
+
+@media (max-width: 850px) {
+  .bg-player div > .bi-aspect-ratio {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .bg-player div > .bi-heart {
+    display: none;
+  }
+}
+
+/* play icons in the middle */
+
+.controls-player a img {
+  width: 10px;
+  max-height: 14px;
+}
+
+.controls-player a i {
+  filter: brightness(60%);
+}
+
+.controls-player .play-icon-player {
+  color: black;
+  background-color: white;
+  border: 6px solid white;
+  border-radius: 100%;
+  width: 10px;
+  max-height: 8px;
+  margin-right: 2rem;
+}
+
+.controls-player div:nth-child(2) {
+  margin-top: 1px;
+  padding-top: 1rem;
+}
+
+.player-part span:first-of-type {
+  margin-right: 4px;
+  font-size: 8px;
+}
+
+.player-part #hr {
+  border: 2px solid rgba(128, 128, 128, 0.596);
+  min-width: 400px;
+  height: 2px;
+}
+
+.player-part #hr ~ span {
+  margin-left: 4px;
+  font-size: 8px;
+}
+
+#input-player {
+  background-color: grey;
+  color: grey;
+  width: 4rem;
+}
+
+.input-wrapper {
+  margin-top: 6px;
+}
+
+.player-wrapper i {
+  opacity: 80%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #play-last-one {
+    margin-left: 25%;
+  }
+
+  .player-part #hr {
+    min-width: 160px;
+  }
+
+  .player-part #hr {
+    min-width: 200px;
+  }
+}
+
+/* right icons player  */
+@media screen and (max-width: 767px) {
+  #play-last-one div {
+    display: none !important;
+  }
+  .right-icons-player {
+    display: none !important;
+  }
+}
+/* End of Player style*/

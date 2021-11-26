@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../style/root.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style/home-page.css">
+    <link rel="stylesheet" href="../style/homepage.css">
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/nav-player.css">
     
@@ -114,12 +115,10 @@
                     
                 </div>
             </div>
-            
-            
-            
             <!-- End of Navbar-->
         </div>
         <!-- */*/*/*/*/*/*/*/* End of Navbar */*/*/*/*/*/*/*/*/*/*/* -->
+
         <!-- */*/*/*/*/*/*/*/*  Album Page */*/*/*/*/*/*/*/*/*/*/* -->
         <div class="col-12 col-md-10 good-morning" style="width: 100%;">
             <!-- Jumbotron -->
@@ -398,64 +397,68 @@
                 </div>
             </section>
             <!-- END of Shows to try  --> 
-        </main>   
+        </div>   
         
         
-        <!-- Player -->
-        <div id="album-id-player" class="player-wrapper container-fluid px-0 fixed-bottom">
-            
-            <div class="row d-block d-flex flex-row justify-content-between bg-player">
-                <!--  ciao -->
-                <!--  img + title + artist-name -->
-                <div class="d-flex flex-row align-items-center img-wrapper mt-2 col-3 col-md-1">
-                    <img class="img-album-player" src=" /assets/playicons/c49c9f23611294a7f7fbcbee3a22b2af.png" width="300px"
-                    height="300px" alt="queen-the-game-cover-art">
-                    <div class="d-flex flex-column pl-1">
-                        <h5>Another One Bites The Dust - Remastered 2011</h5>
-                        <p class="artist-name">Queen</p>
-                    </div>
-                    <div class="d-flex col-1 mb-4 align-items-center">
-                        <i class="bi bi-heart mr-3" id="heart-player"></i>
-                        <img class="d-inline ml-5 ml-lg-0 d-md-none" src="/assets/playicons/Play.png" width="20px" height="20px"
-                        alt="">
-                        <i class="bi bi-aspect-ratio"></i>
-                    </div>
+    </main> 
+    
+    <!-- Player -->
+    <div id="album-id-player" class="player-wrapper container-fluid px-0 fixed-bottom">
+        
+        <div class="row d-block d-flex flex-row justify-content-between bg-player">
+            <!--  ciao -->
+            <!--  img + title + artist-name -->
+            <div class="d-flex flex-row align-items-center img-wrapper mt-2 col-3 col-md-1">
+                <img class="img-album-player" src=" /assets/playicons/c49c9f23611294a7f7fbcbee3a22b2af.png" width="300px"
+                height="300px" alt="queen-the-game-cover-art">
+                <div class="d-flex flex-column pl-1">
+                    <h5>Another One Bites The Dust - Remastered 2011</h5>
+                    <p class="artist-name">Queen</p>
                 </div>
-                <!--  end img + title + artist-name -->
-                
-                <!-- play icons  -->
-                <div id="play-last-one" class="controls-player justify-content-center">
-                    <div class="offset-lg-6 col-1 col-md-2 d-none d-md-flex justify-content-lg-between mt-2">
-                        <a href="#"><img src="/assets/playicons/Shuffle.png" alt="shuffle-icon">
-                        </a>
-                        <a><img src="/assets/playicons/Previous.png" alt="previous-icon">
-                        </a>
-                        <a><i class="bi bi-play-fill play-icon-player"></i>
-                        </a>
-                        <a><img src="/assets/playicons/Next.png" alt="next-icon">
-                        </a>
-                        <a><img src="/assets/playicons/Repeat.png" alt="repeat-icon">
-                        </a>
-                    </div>
-                    <div class="d-none d-md-flex align-items-center justify-content-lg-start player-part">
-                        <span>0.12</span>
-                        <span id="hr"></span>
-                        <span>3.34</span>
-                    </div>
+                <div class="d-flex col-1 mb-4 align-items-center">
+                    <i class="bi bi-heart mr-3" id="heart-player"></i>
+                    <img class="d-inline ml-5 ml-lg-0 d-md-none" src="/assets/playicons/Play.png" width="20px" height="20px"
+                    alt="">
+                    <i class="bi bi-aspect-ratio"></i>
                 </div>
-                <!-- end play icons  -->
-                
-                <!--  icons-right-volume -->
-                <div class="d-flex flex-row justify-content-end mr-5 mt-3 col-4 col-md-2 right-icons-player">
-                    <i class="bi bi-text-indent-left pr-2"></i>
-                    <i class="bi bi-speaker-fill pr-2"></i>
-                    <i class="bi bi-volume-up"></i>
-                    <div class="input-wrapper"><input class="ml-1" id="input-player" type="range" value="100" />
-                    </div>
-                </div>
-                <!--  end icons-right-volume -->
             </div>
+            <!--  end img + title + artist-name -->
+            
+            <!-- play icons  -->
+            <div id="play-last-one" class="controls-player justify-content-center">
+                <div class="offset-lg-6 col-1 col-md-2 d-none d-md-flex justify-content-lg-between mt-2">
+                    <a href="#"><img src="/assets/playicons/Shuffle.png" alt="shuffle-icon">
+                    </a>
+                    <a><img src="/assets/playicons/Previous.png" alt="previous-icon">
+                    </a>
+                    <a><i class="bi bi-play-fill play-icon-player"></i>
+                    </a>
+                    <a><img src="/assets/playicons/Next.png" alt="next-icon">
+                    </a>
+                    <a><img src="/assets/playicons/Repeat.png" alt="repeat-icon">
+                    </a>
+                </div>
+                <div class="d-none d-md-flex align-items-center justify-content-lg-start player-part">
+                    <span>0.12</span>
+                    <span id="hr"></span>
+                    <span>3.34</span>
+                </div>
+            </div>
+            <!-- end play icons  -->
+            
+            <!--  icons-right-volume -->
+            <div class="d-flex flex-row justify-content-end mr-5 mt-3 col-4 col-md-2 right-icons-player">
+                <i class="bi bi-text-indent-left pr-2"></i>
+                <i class="bi bi-speaker-fill pr-2"></i>
+                <i class="bi bi-volume-up"></i>
+                <div class="input-wrapper"><input class="ml-1" id="input-player" type="range" value="100" />
+                </div>
+            </div>
+            <!--  end icons-right-volume -->
         </div>
-        <!-- End of Player-->
-    </body>
-    </html>
+    </div>
+    <!-- End of Player-->
+    
+    
+</body>
+</html>
