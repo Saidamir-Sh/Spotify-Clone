@@ -1,4 +1,5 @@
 @import url(./root.css);
+/*
 ul li {
     list-style: none;
 }
@@ -16,7 +17,7 @@ ul li {
     text-decoration: none;
     padding: .5em 0em;
 }
-
+*/
 
 /* Good Morning */
 .good-morning {
@@ -38,7 +39,6 @@ ul li {
     font-size: 2rem;
 }
 /* End of  Good Morning */
-
 
 /* Recently Played */
 .column {
@@ -91,6 +91,15 @@ ul li {
     font-size: .7rem;
 }
 
+#recently-played h6:hover, #shows-to-try h6:hover {
+    color: rgb(194, 194, 194);
+    font-size: .75rem;
+    transition:0.3s;
+    cursor:pointer;
+    -webkit-text-shadow: 2px 2px 8px rgba(255, 253, 253, 0.801);
+    text-shadow: 2px 2px 8px rgba(255, 253, 253, 0.801);
+}
+
 #recently-played .card-body p, #shows-to-try .card-body p {
     white-space: nowrap;
     width: 50px;
@@ -98,11 +107,40 @@ ul li {
     text-overflow: ellipsis; 
 }
 
-#shows-to-try > div > div.row {
-    width: -moz-available;
+#recently-played .card-body p:hover, #shows-to-try .card-body p:hover {
+    width: 100%;
+    max-height: 50%;
+    font-size: .8em;
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
+    transition:0.3s;
+    cursor:pointer;
 }
 
 
+#recently-played .card:hover, #shows-to-try .card:hover {
+    transition:0.5s;
+    cursor:pointer;
+    -webkit-box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308); 
+    box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308);
+}
+
+#shows-to-try > div > div.row {
+    width: -moz-available;
+}
+/*
+#recently-played div.card {
+    animation-name: entry;
+    animation-duration: 2s;
+}
+
+@keyframes entry {
+    0% {left:0%;}
+    25% {left:20%;}
+    100% {right: 0%;}
+}
+*/
 @media screen and (max-width: 576px){
     
     .custom-row {
