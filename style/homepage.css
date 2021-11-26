@@ -71,6 +71,15 @@
     font-size: .7rem;
 }
 
+#recently-played h6:hover, #shows-to-try h6:hover {
+    color: rgb(194, 194, 194);
+    font-size: .75rem;
+    transition:0.3s;
+    cursor:pointer;
+    -webkit-text-shadow: 2px 2px 8px rgba(255, 253, 253, 0.801);
+    text-shadow: 2px 2px 8px rgba(255, 253, 253, 0.801);
+}
+
 #recently-played .card-body p, #shows-to-try .card-body p {
     white-space: nowrap;
     width: 50px;
@@ -100,8 +109,18 @@
 #shows-to-try > div > div.row {
     width: -moz-available;
 }
+/*
+#recently-played div.card {
+    animation-name: entry;
+    animation-duration: 2s;
+}
 
-
+@keyframes entry {
+    0% {left:0%;}
+    25% {left:20%;}
+    100% {right: 0%;}
+}
+*/
 @media screen and (max-width: 576px){
     
     .custom-row {
