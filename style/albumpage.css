@@ -1,7 +1,7 @@
 @import url(./root.css);
 
 /* Album Jumbotron */
-.song-list p{
+.song-list p {
   color: #fff;
 }
 #nav-album-page {
@@ -20,11 +20,11 @@ i {
   background-color: rgba(166, 58, 134, 0.911);
 }
 
-#arrows-album {
+/* #arrows-album {
   display: block;
   align-items: center;
   padding: 0.2rem 1.5rem;
-}
+} */
 
 #profile-album {
   display: block;
@@ -36,6 +36,21 @@ i {
   box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
   -moz-box-shadow: 1px -1px 77px 16px rgba(0, 0, 0, 0.65);
+}
+
+.icon-round {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-round i {
+  color: #fff;
+  font-size: 2rem;
 }
 
 /* media queries upper part */
