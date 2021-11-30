@@ -129,18 +129,8 @@ ul li {
 #shows-to-try > div > div.row {
     width: -moz-available;
 }
-/*
-#recently-played div.card {
-    animation-name: entry;
-    animation-duration: 2s;
-}
 
-@keyframes entry {
-    0% {left:0%;}
-    25% {left:20%;}
-    100% {right: 0%;}
-}
-*/
+
 @media screen and (max-width: 576px){
     
     .custom-row {

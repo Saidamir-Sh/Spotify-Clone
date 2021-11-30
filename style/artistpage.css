@@ -55,4 +55,78 @@ ul li {
         bottom: 0px;
         z-index: 9999;
     }
- }
+}
+
+
+
+#new-section .card {
+    background-color: var(--bg-cards);
+    color: white;
+    height: 20rem;
+}
+
+#new-section .card img{
+    height: 10rem;
+}
+
+
+#new-section h5 {
+    font-size: .8rem;
+    margin-top: .3rem;
+}
+
+#new-section p {
+    font-size: .75rem;
+    color: rgb(194, 194, 194);
+}
+
+#new-section .card-body p{
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis; 
+}
+
+#new-section h4 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#new-section h6 {
+    color: rgb(194, 194, 194);
+    font-size: .7rem;
+}
+
+#new-section h6:hover {
+    color: rgb(194, 194, 194);
+    font-size: .75rem;
+    transition:0.3s;
+    cursor:pointer;
+    -webkit-text-shadow: 2px 2px 8px rgba(255, 253, 253, 0.801);
+    text-shadow: 2px 2px 8px rgba(255, 253, 253, 0.801);
+}
+
+#new-section .card-body p {
+    white-space: nowrap;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#new-section .card-body p:hover {
+    width: 100%;
+    max-height: 50%;
+    font-size: .8em;
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+
+#new-section .card:hover {
+    transition:0.5s;
+    cursor:pointer;
+    -webkit-box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308); 
+    box-shadow: 0px -1px 10px 0px rgba(255, 255, 255, 0.308);
+}
