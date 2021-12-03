@@ -16,19 +16,51 @@ const fetchData = () => {
 
 
 
-let search = document.querySelector('#search')
+let search = document.querySelector('#nav-search')
+
+const handleSearch = (event) => {
+    event.preventDefault()
+
+    let searchTerm = event.target.elements['search'].value
+
+    let tokens = searchTerm
+        .toLowerCase()
+        .split(' ')
+        .filter(function(token){
+            return token.trim() !== '';
+    })
+
+    if(tokens.length) {
+        let searchTermRegex = new RegExp(tokens.join('|'), 'gim');
+        let filteredList = albums.filter(function(album){
+          
+          let albumString = '';
+          for(var key in book) {
+            if(album.hasOwnProperty(key) && album[key] !== '') {
+                albumString += album[key].toString().toLowerCase().trim() + ' ';
+            }
+          }
+          
+          return albumString.match(searchTermRegex);
+        });
+        
+        render(filteredList);
+    }
+}
+
 
 const createSearchBar = () => {
     const divSearch = document.createElement("div") 
     divSearch.innerHTML = 
     `<form action=" ">
-    <input type="text" placeholder="Search.." name="search">
+    <input id="search" type="text" placeholder="Search.." name="search">
     </form>`
     
-    search.appendChild(divSearch)
+    search.appendChild(divSearch).addEventListener('click', handleSearch, {once: true})
 } 
 
 search.addEventListener("click", createSearchBar, {once: true})
+
 
 window.onload = () => {
     fetchData()
