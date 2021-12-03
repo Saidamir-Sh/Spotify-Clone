@@ -1,5 +1,5 @@
 const fetchData = (query = "queen") => {
-        fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=" + query)
+        fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=" + handleSearch())
     .then( response => 
         response.json()
     )
@@ -15,10 +15,11 @@ const fetchData = (query = "queen") => {
 
 let search = document.querySelector('#nav-search')
 
-/* const handleSearch = (event) => {
+const handleSearch = (event) => {
     event.preventDefault()
     searchTerm = event.target.value.toLowerCase()
-} */
+    return searchTerm
+} 
 
 
 const createSearchBar = () => {
