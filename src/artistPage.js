@@ -1,68 +1,74 @@
 
-
-const display_artist = () => {  
-    
-       
-    fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/queen", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-		"x-rapidapi-key": "20b74dadd4msh868d3bed084b2c9p1052e3jsn745d7ab10a9e"
-	}
-})
-.then(response => response.json())
-.then((music) => {
-     
-    toArtistPage(music.data)
-    //DOM MANIPULATION
-    console.log(music)
-
-     
-
-    })
-
-.catch(err => {
-	console.error(err);
-});
-}
-
-const toArtistPage = () => {
-         
-    const artistName = document.querySelector('h1');  
-     artistName.addEventListener('click', () => {artistName.href = music.data.link})
-    
-}
-
-display_artist()
-
-
-
   const getArtistInfo = () => {
     
      let searchParams = new URLSearchParams(window.location.search)
-     let id = searchParams.toString('id');
+     let id = searchParams.get('id');
      console.log(id)
       
       
-    fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/" + id, {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-            "x-rapidapi-key": "20b74dadd4msh868d3bed084b2c9p1052e3jsn745d7ab10a9e"
-        }
-    })
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/" + id, 
+        
+    )
     .then( response => response.json())
-    .then( artist => {
+    .then( artistData => {
             
-        console.log(artist)
+        console.log(artistData)
 
-
+            displayInfo(artistData)
+          
          
           })
       
   }
 
 
+  const displayInfo = (artistData) => {
+
+            
+const artistName = document.querySelector('h1');
+            artistName.innerHTML = artistData.name
+            
+            
+const background_img = document.getElementById('jumbotron')
+            console.log(background_img)
+background_img.style.backgroundImage = ` url(${artistData.picture_medium})`
+// background_img.classList.add('background-repeat: no-repeat;')
+            
+            // artistData.onclick = () => {
+            //     "./artist_Page.html?artist/id=" + artist.id
+            // }
+
+            
+
+  }
+
+  const getTracks = (artistData) =>{
+        
+        const songsList = document.querySelector('#tracks')
+        const row = document.createElement('div')
+        row.className = "d-flex justify-content-between align-items-center mb-2"
+        
+              
+            row.innerHTML += 
+            `
+            <div>
+              <small class="mr-3">${artist.name}</small>
+              <img class="mr-2" style="width: 3em;" src="../assets/artistpage/img1.jpg" alt="Album Cover">
+              <small>Another One Bites The Dust - Remastered 2011</small>
+            </div>
+            <small>1,013,427,226</small>
+            <small>3:34</small>
+          
+            `
+  
+          songsList.appendChild(row)
+            
+        }
+
+
+  
   getArtistInfo()
+
+  getTracks()
 
   
