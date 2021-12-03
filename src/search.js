@@ -21,7 +21,7 @@ let search = document.querySelector('#nav-search')
 const handleSearch = (event) => {
     event.preventDefault()
 
-    let searchTerm = event.target.elements['search'].value
+    let searchTerm = event.target.value
 
     let tokens = searchTerm
         .toLowerCase()
@@ -53,7 +53,7 @@ const createSearchBar = () => {
     const divSearch = document.createElement("div") 
     divSearch.innerHTML = 
     `<form action=" ">
-    <input id="search" type="text" placeholder="Search.." name="search">
+        <input id="search" type="text" placeholder="Search.." name="search">
     </form>`
     
     search.appendChild(divSearch).addEventListener('click', handleSearch, {once: true})
