@@ -21,6 +21,25 @@ ul li {
 
 /* Album Jumbotron */
 
+.verified{
+    margin-bottom: -60px;
+ 
+    margin-left: 20%;
+    
+}
+
+.verified::after{
+    content:"";
+    width: 30px;
+height: 30px;
+background: url("src=../assets/logo/verify.png") no-repeat -30px -50px no-scroll;
+
+top: 10px;
+right: 5px;
+position: absolute;
+display: inline-block;
+
+}
 /* End of Jumbotron*/
 
 

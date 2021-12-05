@@ -169,42 +169,54 @@
       <!-- */*/*/*/*/*/*/*/* End of Navbar */*/*/*/*/*/*/*/*/*/*/* -->
 
       <!-- */*/*/*/*/*/*/*/*  Artist Page */*/*/*/*/*/*/*/*/*/*/* -->
-      <div class="col-lg-10 col-md-10" style="width: 100%;">
+      <div id="jumbotron" class="col-lg-10 col-md-10" style="  width: 100%;   
+        height: 50vh; background-repeat: no-repeat; background-size:contain; margin-left: -1.7rem;" >
         <!-- Jumbotron -->
-        <div id="jumbotron" class="container-fluid"
-          style="background-repeat: no-repeat; object-fit:cover; width: 100%; background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),; background-position: center;background-repeat: no-repeat; height: 50vh;">
+
+        <div  class="container-fluid"  onload="randomGradient()"
+          style="  width: 100%;  background-position:center; background-repeat: no-repeat; height: 50vh;">
           <div class="row d-flex justify-content-between pt-3 h-100">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
               <div class="d-flex justify-content-between pb-5" style="width: 8%;">
                 <a href="#" class="icon-round text-white"><i class="bi bi-arrow-left-short"
                     style="font-size: 2rem;"></i></a>
                 <a href="#" class="icon-round text-white"><i class="bi bi-arrow-right-short"
                     style="font-size: 2rem;"></i></a>
               </div>
-              <div class="pt-5 position-absolute" style="bottom: 0px;">
-                <p class="text-white"><img style="width: 1em;" src="../assets/logo/verify.png"> Verified artist</p>
-                <h1  class="text-white" style="font-size: 4rem;font-weight: 700;" onclick=""> Queen</h1>
-                <small class="text-white font-weight-bold">37 254 400 monthly listeners</small>
+              <div class="col-lg-3 mr-5">
+              <div  class="card" style="width: 0.5rem; ">
+                <div id="artistImg"class="card-body" style="padding: 7.5rem;" >
+                </div>             
+              </div>
+              </div>
+              
+              <div class="col-lg-12">
+              <div class=" " style="bottom: 6px; margin-top: -8rem; margin-left:2%;">
+                <p class="text-white verified mt-4"> Verified artist</p>
+                <h1  class="text-white mt-0 mb-1" style="font-size: 3rem;font-weight: 700; margin-left: 15rem; top:-98px;height: 3.5rem" onclick=""> Queen</h1>
+                <small class="text-white font-weight-bold" style="margin-left: 15rem; margin-bottom:-13px; ;">37 254 400 monthly listeners</small>
               </div>
             </div>
-            <div class="col-lg-3">
-              <a href="#">
-                <div class="d-flex justify-content-center align-items-start"
-                  style="background-color: rgba(0, 0, 0, 0.185); border-radius: 15px;">
+            </div>
+<!-- 
+          
+              <a href="#" style="height:60px">
+                <div class="d-flex justify-content-center align-items-start "
+                  style="background-color: rgba(0, 0, 0, 0.185); border-radius: 15px; width: 60%; height: 20%;">
                   <img class="mr-2 align-self-center" style="width: 2em; border-radius: 50%;"
                     src="https://pbs.twimg.com/profile_images/1281577317194760196/mG74FQIP.jpg" alt="Profile">
                   <p class="text-white mt-3 font-weight-bold" style="font-size: .8rem;">Diego Banovaz</p>
                   <i class="bi bi-caret-down-fill mt-3 text-white ml-1" style="font-size: .8rem;"></i>
                 </div>
-              </a>
-            </div>
+              </a> -->
+            
           </div>
         </div>
         <!-- ENd of Jumbotron-->
 
         <!-- Song List -->
-        <div class="artist-list">
-          <div class="d-flex justify-content-between align-items-center pt-4 ml-3" style="width: 20%;">
+        <div class="artist-list " style="margin-left: -1.7rem; width: 100%;">
+          <div class="d-flex justify-content-between align-items-center pt-4 ml-3" style="width: ;">
             <div class="btn-pause d-flex justify-content-center align-items-center on-pulse"><i class="bi bi-pause"></i>
             </div>
             <a class="btn btn-outline-light" style="font-size: .9rem;">Follow</a>
